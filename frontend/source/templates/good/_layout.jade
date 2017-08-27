@@ -1,0 +1,49 @@
+extends ../_layout
+
+block layout
+  .si-layout__body
+    block content
+    include partials/_section-faq
+    include partials/_section-docs
+    .si-good-section
+      .container.container_s_m
+        .si-layout-section
+          .si-good-section-update
+            span.si-good-section-update__c Дата обновления сведений на странице: 
+            span.si-good-section-update__d 12 января, 2016  в 13:40
+    
+  script(type="text/ng-template" id="siGoodAccordionTemplate")
+    .si-good-accordion(ng-transclude, ng-cloack)
+  
+  script(type="text/ng-template" id="siGoodAccordionPaneTemplate")
+    .si-good-accordion__pane(ng-class="{'active': active}", ng-transclude)
+                
+  script(type="text/ng-template" id="siGoodTabsTemplate")
+    .si-good-tabs
+      .r.r_s_m
+        .r__c.r__c_md_4
+          .si-good-tabs-nav
+            .si-good-tabs-nav__item(ng-repeat="tab in tabs.tabs")
+              a.si-good-tabs-nav__button.sb-button.sb-button_s_s(
+                ng-click="tabs.select(tab)"
+                ng-class="{'active': tab.active}")
+                span.sb-button__text(ng-bind="tab.title")
+        .r__c.r__c_md_8(ng-transclude)
+
+  script(type="text/ng-template" id="siGoodTabsPaneTemplate")
+    .si-good-tabs__pane(ng-show="active" ng-transclude)
+
+  script(type="text/ng-template" id="siGoodSliderTemplate")
+    .si-good-slider
+      .container.container_s_m
+        .si-good-slider-carousel(ng-transclude)
+        .si-good-slider-tabs
+          .r
+            .si-good-slider-tabs__item(ng-repeat="slide in slider.slides")
+              a.si-good-slider-tabs__link.si-link(
+                ng-click="slider.select(slide)"
+                ng-class="{'si-active': slide.active}")
+                span.si-link__text(ng-bind="slide.name")
+
+  script(type="text/ng-template" id="siGoodSliderSlideTemplate")
+    .si-good-slider-slide(ng-transclude)

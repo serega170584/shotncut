@@ -1,0 +1,61 @@
+extends _layout
+
+block content
+  .container(ng-controller="siSearchController as vm")
+    
+    +b.search-page(ng-cloak)
+      +e.form
+        +b.spacer._s_m
+          form.si-search-form(name="vm.form", ng-submit="vm.submit()")
+            .r.r_s_m
+              .r__c.r__c_g_1
+                input.si-input.si-input_s_m.si-input_theme_a(type="text", value="полис", required, ng-model="vm.q", ng-change="vm.submit()")
+              .r__c.r__c_r
+                button.sb-button.sb-button_s_m.sb-button_theme_a(type="submit")
+                  span.sb-button__text Искать
+      +e.results(ng-show="vm.currentQ")
+        +b.spacer._s_m
+          .r.r_s_m.r_a_c
+            .r__c
+              .si-search__text
+                | По запросу 
+                span «{{vm.currentQ}}» 
+                ng-pluralize(
+                  count="vm.results.length"
+                  when="{'0': 'ничего не найдено.', 'one': 'найден {} результат.', 'few': 'найдено {} результата.', 'many': 'найдено {} результатов.'}")
+            .r__c.r__c_r
+              label.si-radio.si-radio_theme_a
+                input.si-radio__control(type="checkbox")
+                span.si-radio__box
+                
+        +b.spacer._s_m
+          .si-search-results
+            a.si-search-results__item(href="//{{result._source.url}}", ng-repeat="result in vm.results")
+              .si-search-results__name(ng-bind-html="result.highlight.title[0]")
+              .si-search-results__text(ng-bind-html="result.highlight.preview_text[0]")
+                
+        .si-layout-section.si-layout-section_s_m(ng-hide="true")
+          .si-pagination.si-pagination_theme_a
+            .si-pagination__item
+              a.si-pagination__link.si-pagination__link_active 1
+            .si-pagination__item
+              a.si-pagination__link 2
+            .si-pagination__item
+              a.si-pagination__link 3
+            .si-pagination__item
+              a.si-pagination__link 4
+            .si-pagination__item
+              a.si-pagination__link 5
+            .si-pagination__item
+              a.si-pagination__link 6
+            .si-pagination__item
+              a.si-pagination__link 7
+            .si-pagination__item
+              a.si-pagination__link 8
+            .si-pagination__item
+              a.si-pagination__link 9
+            .si-pagination__item
+              a.si-pagination__link 10
+            .si-pagination__item
+              a.si-pagination__link
+                span.si-pagination__next

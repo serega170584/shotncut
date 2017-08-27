@@ -1,0 +1,71 @@
+$ctx = '.sb-good-anchor'
+
+{$ctx}
+  position fixed
+  top 50%
+  left 0
+  z-index 99
+  display none
+  overflow hidden
+  margin-top 2.5rem
+  padding-right 48px
+  transform translate3d(0, -50%, 0)
+  border-radius 1rem
+  background #009942
+  opacity 0
+
+{$ctx}__instance
+  margin 1rem
+
+  .si-link
+    color #fff
+    white-space nowrap
+    font-weight 500
+    font-size .875rem
+    opacity .5
+
+    &:hover
+    &_active
+      opacity 1
+
+{$ctx}__icon
+  sprite-size()
+  sprite-image()
+  width 24px
+  height 24px
+
+  &_about
+    sprite-position(ic_anchor_about_24px)
+
+  &_answers
+    sprite-position(ic_anchor_answers_24px)
+
+  &_power
+    sprite-position(ic_anchor_power_24px)
+
+  &_coins
+    sprite-position(ic_anchor_coins_24px)
+
+  &_info
+    sprite-position(ic_anchor_info_24px)
+
+  &_issue
+    sprite-position(ic_anchor_issue_24px)
+
+  &_action
+    sprite-position(ic_anchor_action_24px)
+
+  &_location
+    sprite-position(ic_anchor_location_24px)
+
+  &_declare
+    sprite-position(ic_anchor_declare_24px)
+
+  &_message
+    sprite-position(ic_anchor_message_24px)
+
+  &_files
+    sprite-position(ic_anchor_files_24px)
+
+  &_video
+    sprite-position(ic_anchor_video_24px)

@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сбербанк страхование</title>
+
+    <link rel="stylesheet" href="css/jquery.datepick.css" media="all">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" media="all">
+    <link rel="stylesheet" href="css/common.css" media="all">
+
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/jquery.plugin.js"></script>
+    <script src="js/libs/jquery.datepick.js"></script>
+    <script src="js/libs/jquery.datepick-ru.js"></script>
+    <script src="js/libs/slick.js"></script>
+    <script src="js/libs/phone-mask.js"></script>
+    <script src="js/libs/jquery.mCustomScrollbar.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/pages/products.js"></script>
+    <script src="js/pages/first-capital.js"></script>
+    <script src="js/pages/order.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/question-popup.js"></script>
+
+</head>
+<body>
+
+    <header class="js-header b-header">
+        <div class="js-header-wrapper b-header__wrapper b-wrapper">
+
+            <div class="u-clear-fix b-header__top">
+                <a href="#" class="b-header__logo"></a>
+                <div class="b-header__login_box">
+                    <a href="#" class="b-header__login">
+                        <span class="b-header__login_text">Войти</span>
+                        <span class="b-header__login_icon"></span>
+                    </a>
+                </div>
+                <ul class="u-clear-fix b-top-menu">
+                    <li>
+                        <a href="#" class="js-feedback-call">Обратная связь</a>
+                    </li>
+                    <li>
+                        <a href="#">Страховой случай</a>
+                    </li>
+                    <li>
+                        <a href="#">Активировать полис</a>
+                    </li>
+                </ul>
+                <div class="b-header__search">
+                    <a href="#" class="b-header__search_i"></a>
+                </div>
+
+                <div class="js-header-line b-header__line"></div>
+            </div>
+
+            <div class="u-clear-fix b-header__bottom">
+                <ul class="u-clear-fix b-bottom-menu">
+                    <li>
+                        <a href="#" class="active">Путешествия</a>
+                    </li>
+                    <li>
+                        <a href="#">Здоровье и жизнь</a>
+                    </li>
+                    <li>
+                        <a href="#">Семья</a>
+                    </li>
+                    <li>
+                        <a href="#">Недвижемость</a>
+                    </li>
+                    <li>
+                        <a href="#">Финансы</a>
+                    </li>
+                    <li>
+                        <a href="#">Для бизнеса</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-header-main b-header-main">
+            <div class="b-header-main__wrapper">
+                <div class="u-clear-fix b-wrapper">
+                    <div class="b-header-main__l">
+                        <a href="#menu-main" class="js-header-tab-link b-header-main__link b-header-main__link_first active">
+                            Сбербанк Страхование
+                        </a>
+                        <ul class="b-header-main__nav">
+                            <li>
+                                <a href="#" class="b-header-main__link b-header-main__link_travel">
+                                    <span class="b-link"><span class="b-link__text">Путешествия</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu-health" class="js-header-tab-link b-header-main__link b-header-main__link_health">
+                                    Здоровье и жизнь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu-family" class="js-header-tab-link b-header-main__link b-header-main__link_family">
+                                    Семья
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu-build" class="js-header-tab-link b-header-main__link b-header-main__link_build">
+                                    Недвижимость
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu-finance" class="js-header-tab-link b-header-main__link b-header-main__link_finance">
+                                    Финансы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu-business" class="js-header-tab-link b-header-main__link b-header-main__link_business">
+                                    Для бизнеса
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="b-header-main__l_tel">
+                            <div class="b-header-main__tel">
+                                <span>ООО СК «Сбербанк Страхование жизни»</span>
+                                <a href="tel:88005555595">8 800 555 55 95</a>
+                            </div>
+                            <div class="b-header-main__tel">
+                                <span>ООО СК «Сбербанк Страхование»</span>
+                                <a href="tel:88005555557">8 800 555 55 57</a>
+                            </div>
+                        </div>
+                        <a href="#" class="b-header-main__link b-header-main__link_last">
+                            Сотрудникам Сбербанка
+                        </a>
+                        <a href="#" class="b-header-main__link b-header-main__link_last">
+                            Партнерские продукты
+                        </a>
+                    </div>
+                    <div class="b-header-main__r">
+                        <div id="menu-main" class="js-header-tab b-header-main__tab b-header-main__tab_main active">
+                            <div class="b-header-main__tel">
+                                <span>ООО СК «Сбербанк Страхование жизни»</span>
+                                <a href="tel:88005555595">8 800 555 55 95</a>
+                            </div>
+                            <div class="b-header-main__tel">
+                                <span>ООО СК «Сбербанк Страхование»</span>
+                                <a href="tel:88005555557">8 800 555 55 57</a>
+                            </div>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">О нас</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Закупки</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Команда</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Финансовые показатели</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Вакансии</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Страховая документация</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Реестр агентов</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Действия по полису</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Раскрытие информации</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Новости</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="b-link"><span class="b-link__text">Контакты</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="menu-health" class="js-header-tab b-header-main__tab">
+                            <h6>Онлайн-оформление</h6>
+                            <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Глава семьи</span></span>
+                                        <div data-pic="i/__tmp/header-hover-pic-1.png" class="js-header-product-get-text hidden">
+                                            Защита семьи на случай непредвиденных обстоятельств со здоровьем главы семьи
+                                            <span class="b-price">от 1 240 <span class="b-rub">c</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита близких</span></span>
+                                        <div data-pic="i/__tmp/header-hover-pic-2.png" class="js-header-product-get-text hidden">
+                                            Страхование самых близких людей на случай переломов, ожогов, тяжелых ран, обморожений
+                                            <span class="b-price">от 1 040 <span class="b-rub">c</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита от Клеща</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h6>Оформление в офисе</h6>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Сберегательное страхование</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Подушка безопасности</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Международное медицинское страхование</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Второе экспертное медицинское мнение</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Ремень безопасности</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="menu-family" class="js-header-tab b-header-main__tab">
+                            <h6>Онлайн-оформление</h6>
+                            <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Глава семьи</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита близких</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h6>Оформление в офисе</h6>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Детский образовательный план</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Первый капитал</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Семейный актив</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="menu-build" class="js-header-tab b-header-main__tab">
+                            <h6>Онлайн-оформление</h6>
+                            <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита дома</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Продление страхования ипотеки</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защищённый заёмщик</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Мультиполис онлайн</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h6>Оформление в офисе</h6>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Страхование жизни заемщиков кредитов Сбербанка</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Без забот</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="menu-finance" class="js-header-tab b-header-main__tab">
+                            <h6>Онлайн-оформление</h6>
+                            <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Защита карт</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Мультиполис</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h6>Оформление в офисе</h6>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">СмартПолис</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Рантье</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Наследие</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Страхование жизни заемщиков кредитов Сбербанка</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Без забот</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="menu-business" class="js-header-tab b-header-main__tab">
+                            <h6>Оформление в офисе</h6>
+                            <ul class="u-clear-fix b-header-main__list">
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Стабильный бизнес</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Страхование гражданской ответственности</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-header-product-link">
+                                        <span class="b-link"><span class="b-link__text">Страхование движимого имущества</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="js-header-circle b-header-main__circle">
+                        <div class="b-header-main__circle__text b-header-main__circle__text-main">
+                            Наведите курсор на&nbsp;продукт, чтобы увидеть здесь краткую информацию
+                        </div>
+                        <div class="b-header-main__circle_insert">
+                            <div class="js-header-circle-insert-pic b-header-main__circle_insert-pic"></div>
+                            <div class="js-header-circle-insert-text b-header-main__circle__text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <a href="#" class="js-toggle-menu b-menu-toggle">
+        <span class="b-menu-toggle__line b-menu-toggle__line_1"></span>
+        <span class="b-menu-toggle__line b-menu-toggle__line_2"></span>
+        <span class="b-menu-toggle__line b-menu-toggle__line_3"></span>
+    </a>
+
+    <div class="b-content">
+
+        <div class="js-top-result-fix b-bg b-bg__top">
+            <div class="b-bg__top_overflow">
+                <div class="b-bg__pic" style="background-image: url(i/__tmp/bg-travel.jpg)"></div>
+            </div>
+
+            <section class="js-section-calc b-first-section b-first-section__first-capital">
+                <div class="b-wrapper">
+                    <div class="b-product__wrapper">
+                        <div class="b-main-title">
+                            <h2>Первый капитал</h2>
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Свадьба, обучение, покупка квартиры или машины ребенку. Выберите цель накопления, срок и комфортный периодический платеж. В нужный момент ваш ребенок получит нужную сумму, а вы будете застрахованы от неприятностей, которые могут этому помешать.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="js-calc-result-blocks js-calc-top-result b-calc__result b-calc__result_link">
+                        <a href="#" class="js-buy-polis-popup-link b-calc__result_link-mian">Хочу купить полис</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how_to_buy" class="js-nav-block js-nav-block-for-fix b-bg b-travel-how-buy">
+
+                <div class="js-nav-bar-wrapper b-nav-page__wrapper">
+                    <div class="js-nav-bar b-nav-page">
+                        <div class="b-wrapper">
+                            <ul class="js-nav-ul u-clear-fix b-nav-page__list">
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#how_to_buy" class="js-nav-link b-nav-page__link">Как купить</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#how_it_works" class="js-nav-link b-nav-page__link">Как все устроено</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#privilege" class="js-nav-link b-nav-page__link">Привилегии</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#action" class="js-nav-link b-nav-page__link">Действия с полисом</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#questions" class="js-nav-link b-nav-page__link">Вопросы</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#documents" class="js-nav-link b-nav-page__link">Документы</a>
+                                </li>
+                                <li class="js-nav-item b-nav-page__item">
+                                    <a href="#insurance_case" class="js-nav-link b-nav-page__link">Страховой случай</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-nav-block-for-fix-mobile b-wrapper">
+                    <div data-step="" class="js-how-buy-carousel u-clear-fix b-travel-how-buy__column_box">
+                        <div class="js-how-buy-box b-travel-how-buy__column">
+                            <div class="b-travel-how-buy__column_pic b-travel-how-buy__column_pic-4"></div>
+                            <div class="b-travel-how-buy__column_text">
+                                В отделении «Сбербанк Премьер»
+                            </div>
+                        </div>
+                        <div class="js-how-buy-box b-travel-how-buy__column">
+                            <div class="b-travel-how-buy__column_pic b-travel-how-buy__column_pic-5"></div>
+                            <div class="b-travel-how-buy__column_text">
+                                По телефону
+                                8&nbsp;800&nbsp;555-55-59
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <div class="js-calc-result-blocks js-calc-fix-mobile-result b-calc__result b-calc__result_link b-calc__result_mobile">
+            <a href="#" class="js-buy-polis-popup-link b-calc__result_link-mian">Хочу купить полис</a>
+        </div>
+
+        <section id="how_it_works" class="js-bottom-result-fix-top js-nav-block b-product-section">
+            <div class="b-wrapper">
+                <h3>Как всё устроено</h3>
+
+                <div class="b-product-section__wrapper">
+                    <div class="js-video-block b-video-block">
+                        <div class="b-video-block__overlay" style="background-image: url(i/__tmp/video-bg.jpg)">
+                            <a href="#" id="play-button" class="b-video-block__play"></a>
+                            <span class="js-video-block-time b-video-block__time"></span>
+                        </div>
+                        <iframe id="product-video" width="680" height="20" src="https://www.youtube.com/embed/4XI3wDfriE4?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="js-tabs-container b-main-tabs__section">
+                    <ul class="u-clear-fix b-main-tabs__tabs">
+                        <li>
+                            <a href="#tab1" class="js-tabs b-main-tabs__tabs_link active">Как работает полис</a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="js-tabs b-main-tabs__tabs_link">А если со мной что-то случится</a>
+                        </li>
+                        <li>
+                            <a href="#tab3" class="js-tabs b-main-tabs__tabs_link">А если что-то случится с ребенком</a>
+                        </li>
+                    </ul>
+
+                    <div class="b-product-section__wrapper b-main-tabs__result_box">
+                        <div id="tab1" class="js-tabs-result b-main-tabs__result active">
+                            <div class="b-text__wrapper">
+                                <ol>
+                                    <li>Вы выбираете нужную сумму и возраст ребенка, когда ему эта сумма понадобится.</li>
+                                    <li>Подбираете комфортный размер платежа и решаете, как будете делать взносы — раз в месяц, в квартал или в год. </li>
+                                    <li>Как только ребенок достигает заданного возраста, ему выплачивается вся накопленная сумма.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab2" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <ol>
+                                    <li>В полисе уже предусмотрено <b>освобождение от уплаты взносов</b> в случае в случае ухода взрослого из жизни или потери им трудоспособности (1 или 2 группа инвалидности)</li>
+                                    <li>
+                                        Не забудьте подключить <strong>дополнительную защиту</strong> на случай:
+                                        <ul>
+                                            <li>
+                                                Ухода из жизни в результате несчастного случая или присвоении инвалидности 1 группы по любой причине или 2, 3 группы в результате несчастного случая
+                                            </li>
+                                            <li>
+                                                Ухода из жизни в результате несчастного случая на транспорте общего пользования
+                                            </li>
+                                            <li>
+                                                Первичного диагностирования особо опасного заболевания
+                                            </li>
+                                            <li>
+                                                Получения травм, хирургического вмешательства или госпитализации в результате несчастного случая
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab3" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Вы <b>получите выплату полной суммы</b> по полису в случае получения травмы ребенком, а также непредвиденных ситуаций со здоровьем (инвалидность в результате несчастного случая, диагностирование особо опасного заболевания).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-calc-bottom-result js-calc-result-blocks b-calc__result b-calc__result_link b-calc__result_bottom">
+                    <a href="#" class="js-buy-polis-popup-link b-calc__result_link-mian">Хочу купить полис</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="privilege" class="js-nav-block b-product-section b-product-section__privilege">
+            <div class="b-wrapper">
+                <h3>Льготы и привелегии</h3>
+
+                <div class="js-tabs-container b-main-tabs__section">
+                    <ul class="u-clear-fix b-main-tabs__tabs">
+                        <li>
+                            <a href="#tab1_1" class="js-tabs b-main-tabs__tabs_link active">Семья под защитой</a>
+                        </li>
+                        <li>
+                            <a href="#tab2_1" class="js-tabs b-main-tabs__tabs_link">Налоговые льготы</a>
+                        </li>
+                        <li>
+                            <a href="#tab3_1" class="js-tabs b-main-tabs__tabs_link">Юридическая защита</a>
+                        </li>
+                    </ul>
+
+                    <div class="b-product-section__wrapper b-main-tabs__result_box">
+                        <div id="tab1_1" class="js-tabs-result b-main-tabs__result active">
+                            <div class="b-text__wrapper">
+                                <ul class="b-ul">
+                                    <li>Если клиент уходит из жизни, его семья получает выплату всей суммы</li>
+                                    <li>Если уход из жизни связан с несчастным случаем, сумма удваивается</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="tab2_1" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <ul>
+                                    <li>По дожитию застрахованного НДФЛ выплачивается с разницы фактической ставки дохода и дохода, рассчитанного по ставке рефинансирования ЦБ РФ</li>
+                                    <li>Выплаты в связи с уходом Клиента из жизни не облагаются НДФЛ</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="tab3_1" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <ul>
+                                    <li>Страховая выплата не может быть поделена при имущественных спорах</li>
+                                    <li>Нет необходимости ожидать 6 месяцев для получения наследства (при указании выгодоприобретателя в договоре страхования)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action" class="js-nav-block b-product-section">
+            <div class="b-wrapper">
+                <h3>Действия с полисом</h3>
+
+                <div class="js-tabs-container b-main-tabs__section">
+                    <ul class="u-clear-fix b-main-tabs__tabs">
+                        <li>
+                            <a href="#tab1_2" class="js-tabs b-main-tabs__tabs_link active">Внести изменения</a>
+                        </li>
+                        <li>
+                            <a href="#tab2_2" class="js-tabs b-main-tabs__tabs_link">Остались вопросы?</a>
+                        </li>
+                        <li>
+                            <a href="#tab3_2" class="js-tabs b-main-tabs__tabs_link">Расторгнуть</a>
+                        </li>
+                    </ul>
+
+                    <div class="b-product-section__wrapper b-main-tabs__result_box">
+                        <div id="tab1_2" class="js-tabs-result b-main-tabs__result active">
+                            <div class="b-text__wrapper">
+                                <ol>
+                                    <li>
+                                        Позвоните 8 800 555-55-57
+                                    </li>
+                                    <li>
+                                        Подготовьте документы
+                                        <ul>
+                                            <li>Оригинал заявления на внесение изменений</li>
+                                            <li>Копию страхового полиса</li>
+                                            <li>Копию документа, удостоверяющего личность</li>
+                                        </ul>
+                                    </li>
+                                    <li>Отправьте документы</li>
+                                    <li>В течение 10 рабочих дней всё будет готово</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="tab2_2" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Звоните 8 800 555 555 7
+                                </p>
+                                <p>
+                                    Или пишите на ks@sberins.rг, указав номер полиса
+                                </p>
+                            </div>
+                        </div>
+                        <div id="tab3_2" class="js-tabs-result b-main-tabs__result">
+                            <div class="b-text__wrapper">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="questions" class="js-nav-block b-product-section">
+            <div class="b-wrapper">
+                <div class="b-product-section__wrapper">
+                    <h2>Вопрос-ответ</h2>
+                    <div class="b-text__wrapper">
+                        <ul class="b-accordion b-accordion__questions">
+                            <li class="js-accordion-item b-accordion__item first-active active">
+                                <a href="#" class="js-accordion-link b-accordion__link">
+                                    Что такое лимит выплат? Есть ли такой лимит у меня в полисе?
+                                </a>
+                                <div class="js-accordion-text b-accordion__text">
+                                    Лимит выплат это  максимальный размер страховой выплаты по страховому случаю, который  установлен Правилами страхования и(или) Договором страхования. Например, если вы застраховали свою жизнь от несчастного   случая сроком на 5  на сумму 120 000 рублей, то максимальный лимит выплаты составит 120 000 рублей, выплата может составить и меньшую   сумму, которую вы можете рассчитать по таблице страховых выплат. Сумма зависит от тяжести травмы. Сумма лимита всегда указана в полисе.
+                                </div>
+                            </li>
+                            <li class="js-accordion-item b-accordion__item">
+                                <a href="#" class="js-accordion-link b-accordion__link">
+                                    Могу ли я произвести оплату полиса в рассрочку?
+                                </a>
+                                <div class="js-accordion-text b-accordion__text">
+                                    В рамках базового покрытия: развлечения на воде с использованием водных велосипедов, каноэ, водных мотоциклов, буксируемых надувных средств и парашютов, посещение аквапарка, водное поло в бассейне, снорклинг, прогулки на яхте. Если вы планируете заниматься более активными видами спорта, то рекомендуем Вам приобрести пакет «Спортивный».
+                                </div>
+                            </li>
+                            <li class="js-accordion-item b-accordion__item">
+                                <a href="#" class="js-accordion-link b-accordion__link">
+                                    Как получить налоговый вычет?
+                                </a>
+                                <div class="js-accordion-text b-accordion__text">
+                                    В рамках базового покрытия: развлечения на воде с использованием водных велосипедов, каноэ, водных мотоциклов, буксируемых надувных средств и парашютов, посещение аквапарка, водное поло в бассейне, снорклинг, прогулки на яхте. Если вы планируете заниматься более активными видами спорта, то рекомендуем Вам приобрести пакет «Спортивный».
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="b-button__box">
+                            <a href="#" class="js-question-popup-call b-button">Задать свой вопрос</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents" class="js-nav-block b-product-section b-product-section__pb">
+            <div class="b-wrapper">
+                <div class="b-product-section__wrapper">
+                    <h3>Документы</h3>
+                    <div class="b-text__wrapper">
+                        <ul class="u-clear-fix b-docs__list">
+                            <li>
+                                <a href="#">
+                                    Правила страхования жизни
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Условия договора страхования жизни Первый капитал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Страховые тарифы по страхованию жизни
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Памятка при наступлении неблагоприятного события
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Заявление о страховой выплате
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Шаблон выписки из амбулаторной карты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Изменение реквизитов для выплаты несовершеннолетним
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="insurance_case" class="js-nav-block js-nav-block-for-stop b-bg b-product-section b-product-section__insurance">
+            <div class="b-bg__top_overflow">
+                <div class="b-bg__pic" style="background-image: url(i/__tmp/bg-travel.jpg)"></div>
+            </div>
+            <div class="b-wrapper">
+                <div class="b-product-section__wrapper">
+                    <h3>Страховой случай</h3>
+
+                    <ol>
+                        <li>
+                            <h4>Позвоните 8 800 555-55-57</h4>
+                        </li>
+                        <li>
+                            <h4>Расскажите нашему представителю, что случилось</h4>
+                        </li>
+                        <li>
+                            <h4>Заполните <a href="#">заявление о страховом случае</a> и подготовьте <a href="#">необходимые документы</a></h4>
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Заказным письмом по адресу: Россия, 115093, г. Москва, ул. Павловская, 7 с копией в электронном виде на адрес:
+                                    <a href="mailto:KS@sberins.ru">KS@sberins.ru</a>
+                                </p>
+                                <p>
+                                    При необходимости осмотра поврежденного имущества экспертами страховой компании, передайте документы через эксперта в день осмотра имущества. Вызов эксперта осуществляется сотрудником страховой компании после регистрации обращения в Контактном Центре.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>В течение 15 рабочих дней всё будет готово</h4>
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Заказным письмом по адресу: Россия, 115093, г. Москва, ул. Павловская, 7 с копией в электронном виде на адрес:
+                                    <a href="mailto:KS@sberins.ru">KS@sberins.ru</a>
+                                </p>
+                                <p>
+                                    При необходимости осмотра поврежденного имущества экспертами страховой компании, передайте документы через эксперта в день осмотра имущества. Вызов эксперта осуществляется сотрудником страховой компании после регистрации обращения в Контактном Центре.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Не забудьте о своих расходах</h4>
+                            <div class="b-text__wrapper">
+                                <p>
+                                    Заказным письмом по адресу: Россия, 115093, г. Москва, ул. Павловская, 7 с копией в электронном виде на адрес:
+                                    <a href="mailto:KS@sberins.ru">KS@sberins.ru</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="b-button__box">
+                        <a href="#" class="b-button">Сообщить о страховом случае</a>
+                    </div>
+                </div>
+                <div class="js-calc-insert-bottom"></div>
+            </div>
+        </section>
+
+        <!--в шаблонах, где круг лейбл в виде ХОЧУ КУПИТЬ ПОЛИС, класс js-top-result-fix-stop переносим на этот блок-->
+        <div class="js-top-result-fix-stop"></div>
+
+        <div class="js-popup-overlay b-popup__overlay">
+            <a href="#" class="js-popup-close b-popup__close"></a>
+            <div class="js-popup-order b-popup b-popup__order">
+                <h4>Заявка на полис</h4>
+                <form action="" class="js-order-form b-order-form">
+                    <p>Оставьте номер телефона, и мы вам перезвоним:</p>
+                    <div class="b-input__box">
+                        <label for="order_phone" class="b-label">Телефон</label>
+                        <input id="order_phone" name="order[phone]" class="js-required b-input phone" type="tel">
+                    </div>
+                    <div class="b-input__box">
+                        <label for="order_phone" class="b-label">Мое имя</label>
+                        <input id="order_name" name="order[name]" class="js-required b-input" type="text">
+                    </div>
+                    <div class="b-button__box">
+                        <button type="submit" class="b-button" disabled="disabled">Отправить</button>
+                    </div>
+                </form>
+                <p class="js-order-form-error b-order-form__error hidden">
+                    Возникла ошибка.<br>Повторите попытку позже.
+                </p>
+                <p class="js-order-form-success b-order-form__success hidden">
+                    Спасибо!<br>В ближайшее время мы свяжемся с вами.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="b-footer-products__section">
+        <div class="b-wrapper">
+            <h2>Вас могут заинтересовать</h2>
+            <div class="b-footer-products__who">
+                Страховой продукт ООО СК «Сбербанк страхование»
+            </div>
+            <div class="u-clear-fix js-footer-product-carousel b-footer-products__carousel">
+
+                <div class="js-footer-product b-product family health">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__text">
+                            <h4>Панацея</h4>
+                            <p>Возместим стоимость лечения, если у вас диагностируют онкологическое заболевание, инфаркт миокарда или инсульт.</p>
+                        </div>
+                        <div class="b-product__price">
+                            <span>от 840 <span class="b-rub">c</span></span>
+                        </div>
+                        <div class="b-product__pic">
+                            <div style="background-image: url(i/__tmp/bg-product.jpg)"></div>
+                        </div>
+                    </a>
+                    <ul class="u-clear-fix b-product__tags">
+                        <li>
+                            <a href="#menu-health" class="js-product-tag">Здоровье и жизнь</a>
+                        </li>
+                        <li>
+                            <a href="#menu-family" class="js-product-tag">Семья</a>
+                        </li>
+                    </ul>
+                    <div class="b-button__box">
+                        <a href="#" class="b-button b-button_small b-button_border">Купить полис</a>
+                    </div>
+                </div>
+
+                <div class="js-footer-product b-product financial_literacy">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__text">
+                            <h4>История рынка страхования жизни</h4>
+                        </div>
+                        <div class="b-product__pic">
+                            <div style="background-image: url(i/__tmp/video-bg.jpg)"></div>
+                        </div>
+                    </a>
+                    <ul class="u-clear-fix b-product__tags">
+                        <li>
+                            <a href="#menu-build" class="js-product-tag">Недвижимость</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="js-footer-product b-product news">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__date">28 июня в 23:23</div>
+                        <div class="b-product__text">
+                            <h4>Страховой продукт «Защита Дома» теперь доступен
+                                в Евросети</h4>
+                            <p>Возместим стоимость лечения, если у вас диагностируют онкологическое заболевание, инфаркт миокарда или инсульт.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="js-footer-product b-product family health">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__text">
+                            <h4>Панацея</h4>
+                            <p>Возместим стоимость лечения, если у вас диагностируют онкологическое заболевание, инфаркт миокарда или инсульт.</p>
+                        </div>
+                        <div class="b-product__price">
+                            <span>от 840 <span class="b-rub">c</span></span>
+                        </div>
+                        <div class="b-product__pic">
+                            <div style="background-image: url(i/__tmp/bg-product.jpg)"></div>
+                        </div>
+                    </a>
+                    <ul class="u-clear-fix b-product__tags">
+                        <li>
+                            <a href="#menu-health" class="js-product-tag">Здоровье и жизнь</a>
+                        </li>
+                        <li>
+                            <a href="#menu-family" class="js-product-tag">Семья</a>
+                        </li>
+                    </ul>
+                    <div class="b-button__box">
+                        <a href="#" class="b-button b-button_small b-button_border">Купить полис</a>
+                    </div>
+                </div>
+
+                <div class="js-footer-product b-product financial_literacy">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__text">
+                            <h4>История рынка страхования жизни</h4>
+                        </div>
+                        <div class="b-product__pic">
+                            <div style="background-image: url(i/__tmp/video-bg.jpg)"></div>
+                        </div>
+                    </a>
+                    <ul class="u-clear-fix b-product__tags">
+                        <li>
+                            <a href="#menu-build" class="js-product-tag">Недвижимость</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="js-footer-product b-product news">
+                    <a href="#" class="b-product__main">
+                        <div class="b-product__type"></div>
+                        <div class="b-product__date">28 июня в 23:23</div>
+                        <div class="b-product__text">
+                            <h4>Страховой продукт «Защита Дома» теперь доступен
+                                в Евросети</h4>
+                            <p>Возместим стоимость лечения, если у вас диагностируют онкологическое заболевание, инфаркт миокарда или инсульт.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="b-footer">
+        <div class="b-wrapper">
+
+            <div class="u-clear-fix b-information__section">
+                <div class="b-information__tel">
+                    <span>ООО СК «Сбербанк Страхование жизни»</span>
+                    <h2><a href="tel:88005555595">8 800 555 55 95</a></h2>
+                </div>
+                <div class="b-information__tel">
+                    <span>ООО СК «Сбербанк Страхование»</span>
+                    <h2><a href="tel:88005555557">8 800 555 55 57</a></h2>
+                </div>
+                <ul class="u-clear-fix b-social__list">
+                    <li class="b-social__item">
+                        <a href="#" class="b-social b-social_fb"></a>
+                    </li>
+                    <li class="b-social__item">
+                        <a href="#" class="b-social b-social_tw"></a>
+                    </li>
+                    <li class="b-social__item">
+                        <a href="#" class="b-social b-social_vk"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="u-clear-fix b-footer__columns_box">
+                <div class="b-footer__columns">
+                    <ul>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="#">Реестр агентов</a>
+                        </li>
+                        <li>
+                            <a href="#">Раскрытие информации</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-footer__columns">
+                    <ul>
+                        <li>
+                            <a href="#">Закупки</a>
+                        </li>
+                        <li>
+                            <a href="#">Финансовые показатели</a>
+                        </li>
+                        <li>
+                            <a href="#">Страховая документация</a>
+                        </li>
+                        <li>
+                            <a href="#">Действия по полису</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-footer__columns">
+                    <span class="b-footer__title">Сотрудникам Сбербанка</span>
+                    <ul>
+                        <li>
+                            <a href="#">Защита от клеща</a>
+                        </li>
+                        <li>
+                            <a href="#">Маяк</a>
+                        </li>
+                        <li>
+                            <a href="#">Верный выбор</a>
+                        </li>
+                    </ul>
+                    <span class="b-footer__title">Партнерские продукты</span>
+                    <ul>
+                        <li>
+                            <a href="#">Онкологическое страхование</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="b-licence">
+                    <li>
+                        <span class="b-licence__title">ООО СК  «Сбербанк страхование»</span>
+                        <p>Лицензия Банка России СИ №4331 и СЛ №4331 выданы 05.08.2015 бессрочно</p>
+                    </li>
+                    <li>
+                        <span class="b-licence__title">ООО СК  «Сбербанк страхование жизни»</span>
+                        <p>Лицензия на осуществление страхования СЖ № 3692, Лицензия на осуществление страхования СЛ № 3692</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="u-clear-fix b-footer__bottom">
+                <div class="b-footer__bottom_copy">
+                    © 2017 Сбербанк cтрахование
+                </div>
+                <div class="b-footer__bottom_made">
+                    <span>Сайт сделан</span> <a target="_blank" href="http://artutkin.ru/">в Артели Уткина</a> <span>в&nbsp;2017 году</span>
+                </div>
+                <div class="b-footer__bottom_middle">
+                    Дата обновления сведений на странице: 22 ноября, 2016 в 13:41
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="js-feedback-overlay b-popup__overlay b-popup__overlay_feedback">
+        <a href="#" class="js-popup-close b-popup__close"></a>
+        <div class="js-feedback-popup b-popup b-popup__feedback">
+            <h2>Обратная связь</h2>
+            <form action="" class="js-feedback-form b-feedback-form">
+                <div class="b-feedback-form__faq">
+                    Каждое обращение будет рассмотрено руководством компании и мы обязательно ответим Вам в течение 2-х дней
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_name" class="b-label">ФИО</label>
+                    <input id="feedback_name" name="feedback[name]" class="js-required b-input" type="text">
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_phone" class="b-label">Мой телефон</label>
+                    <input id="feedback_phone" name="feedback[phone]" class="js-required b-input phone" type="tel">
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_email" class="b-label">Моя электронная почта</label>
+                    <input id="feedback_email" name="feedback[email]" class="js-required b-input email" type="email">
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_title" class="b-label">Тема обращения</label>
+                    <input id="feedback_title" name="feedback[title]" class="js-required b-input" type="text">
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_message" class="b-label">Мое сообщение</label>
+                    <textarea id="feedback_message" name="feedback[message]" class="js-required b-input"></textarea>
+                </div>
+                <div class="b-input__box">
+                    <label for="feedback_time" class="b-label">Во сколько вам удобно позвонить</label>
+                    <input id="feedback_time" name="feedback[time]" class="b-input" type="text">
+                </div>
+                <div class="b-button__box">
+                    <button type="submit" class="b-button" disabled="disabled">Отправить</button>
+                </div>
+            </form>
+            <p class="js-feedback-form-error b-order-form__error hidden">
+                Возникла ошибка.<br>Повторите попытку позже.
+            </p>
+            <p class="js-feedback-form-success b-order-form__success hidden">
+                Спасибо!<br>В ближайшее время мы свяжемся с вами.
+            </p>
+        </div>
+    </div>
+
+    <div class="js-question-overlay b-popup__overlay">
+        <a href="#" class="js-popup-close b-popup__close"></a>
+        <div class="js-question-popup b-popup b-popup__question">
+            <h4>Задайте свой вопрос</h4>
+            <form action="" class="js-question-form b-question-form">
+                <div class="u-clear-fix b-question-form__column">
+                    <div class="b-input__box">
+                        <label for="question_name" class="b-label">Мое имя</label>
+                        <input id="question_name" name="question[name]" class="js-required b-input" type="text">
+                    </div>
+                    <div class="b-input__box">
+                        <label for="question_email" class="b-label">Моя электронная почта</label>
+                        <input id="question_email" name="question[email]" class="js-required b-input email" type="email">
+                    </div>
+                </div>
+                <div class="b-input__box">
+                    <label for="question_message" class="b-label">Мое сообщение</label>
+                    <textarea id="question_message" name="question[message]" class="js-required b-input"></textarea>
+                </div>
+                <div class="b-button__box">
+                    <button type="submit" class="b-button" disabled="disabled">Отправить</button>
+                </div>
+
+            </form>
+            <p class="js-question-form-error b-order-form__error hidden">
+                Возникла ошибка.<br>Повторите попытку позже.
+            </p>
+            <p class="js-question-form-success b-order-form__success hidden">
+                Спасибо!<br>В ближайшее время мы свяжемся с вами.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

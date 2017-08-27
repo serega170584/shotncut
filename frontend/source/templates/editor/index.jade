@@ -1,0 +1,74 @@
+extends _layout
+
+block content
+  script.
+    window.data = {
+      author: {id: 2}
+    }
+  +b.container(ng-controller="EditorController as vm")
+    .si-breadcrumbs
+      .si-breadcrumbs__item
+        a.si-breadcrumbs__link(href="#")
+          span.si-breadcrumbs__text Главная
+      .si-breadcrumbs__item
+        a.si-breadcrumbs__link(href="#")
+          span.si-breadcrumbs__text Авторы
+      span.si-breadcrumbs__text Константин Константинопольский
+    
+    +b.spacer._s_m
+      .r.r_s_m
+        .r__c.r__c_md_8
+          .si-editor-person
+            .si-editor-person__content
+              .si-editor-person__name Павел <br> Константинопольский
+              .si-editor-person__additional
+                .r.r_s_m.r_a_c
+                  .r__c
+                    .si-editor-person__qoute “Живу, чтобы писать и пишу, чтобы жить!”
+                  .r__c.r__c_r
+                    .si-socials.ya-share2(data-services='vkontakte,facebook,odnoklassniki', data-bare="true")
+        .r__c.r__c_md_4
+          .si-editor-details
+            .si-editor-details__r.si-editor-details__r_data
+              .si-editor-details__c Город:
+              .si-editor-details__d Москва
+            .si-editor-details__r.si-editor-details__r_data
+              .si-editor-details__c Дата рождения:
+              .si-editor-details__d 21 декабря, 1988 г.
+            .si-editor-details__r.si-editor-details__r_interests
+              .si-editor-details__c Интересы:
+              .si-editor-details__d
+                .si-tags.si-tags_theme_dark
+                  .si-tags__item
+                    a.si-tags__link(href="#")
+                      .si-tags__text бразилия
+                  .si-tags__item
+                    a.si-tags__link(href="#")
+                      .si-tags__text путешествия
+            .si-editor-details__r.si-editor-details__r_text
+              .si-editor-details__c О себе:
+              .si-editor-details__d Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому
+    +b.spacer._s_m
+      .si-editor-filter
+        form.si-editor-filter__form.r.r_s_m
+          .si-editor-filter__left.r__c
+              .si-editor-search
+                .si-editor-search__control
+                  .si-select.si-select_theme_a(tags='true', placeholder="Выберите теги")
+                    select(multiple)
+                      option fjs
+                      option fjsfs
+                      option fjs324
+                  button.si-editor-search__action(type="submit")
+          .si-editor-filter__right.r__c
+              .si-select.si-select_theme_a
+                select(ng-model="vm.option", ng-change="vm.filter()", ng-options="option.name for option in vm.options track by option.id")
+
+    +b.spacer._s_m
+      .si-isotope.si-isotope__container(isotope-container)
+        .si-isotope__item.si-isotope__item_s_s(ng-repeat="article in vm.articles | orderBy:vm.option.id", isotope-item, style="height: 560px;")
+          si-editor-article(data="article")
+    +b.spacer._s_m(ng-hide="vm.page == vm.count")
+      .si-layout-section.si-layout-section_a_c
+          a.sb-button.sb-button_s_m.sb-button_theme_a(href="#")
+            span.sb-button__text Загрузить еще

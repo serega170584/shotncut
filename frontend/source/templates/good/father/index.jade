@@ -1,0 +1,123 @@
+extends ../_layout
+
+block content
+  .sb-good-anchor
+    .sb-good-anchor__instance
+      a.si-link(href="#")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_issue.sb-icon
+        span.si-link__text Оформить полис
+    .sb-good-anchor__instance
+      a.si-link(href="#3e9fed61-7254-443a-b333-f92380ceb317")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_video.sb-icon
+        span.si-link__text Видео о продукте
+    .sb-good-anchor__instance
+      a.si-link(href="#2749416b-266b-4a26-8641-c83952acde86")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_coins.sb-icon
+        span.si-link__text Стоимость полиса
+    .sb-good-anchor__instance
+      a.si-link(href="#3e9fed61-7254-443a-b333-f92380ceb317")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_action.sb-icon
+        span.si-link__text Страховой случай
+    .sb-good-anchor__instance
+      a.si-link(href="#434434f9-f563-48bc-ac1a-1900c7c3a196")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_declare.sb-icon
+        span.si-link__text Заявить об убытке
+    .sb-good-anchor__instance
+      a.si-link(href="#434434f9-f563-48bc-ac1a-1900c7c3a196")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_answers.sb-icon
+        span.si-link__text Вопросы и ответы
+    .sb-good-anchor__instance
+      a.si-link(href="#434434f9-f563-48bc-ac1a-1900c7c3a196")
+        span.sb-good-anchor__icon.sb-good-anchor__icon_files.sb-icon
+        span.si-link__text Документы
+      
+  .si-good-section.si-good-section-hero#3e9fed61-7254-443a-b333-f92380ceb317(style="background-image: url('/assets/images/background-father.jpg')")
+    .container.container_s_m
+      .si-good-section-hero__overlay
+      .si-good-section-hero__content
+        .si-good-section-hero__caption Глава семьи Онлайн
+        .si-good-section-hero__text Пока у Вас нет полиса, Вы беззащитны. Благодаря страховому полису Вы получаете реальную возможность сохранить финансовое благополучие своей семьи при наступлении неблагоприятного события. Приобретая страховой полис, Вы делаете еще один шаг навстречу будущему Вашей семьи.
+        .si-good-section-hero__action
+          a.sb-button.sb-button_s_m.sb-button_theme_white(href="#")
+            span.sb-button__text Оформить полис
+      a.si-good-section__anchor(href="#")
+
+  include ../partials/_section-steps
+  
+  .si-good-section.si-good-section-video(style="background-image: url('/assets/images/background-father-video.png')")
+    .container.container_s_m
+      .si-good-section-video__content
+        .si-good-section-video__text Узнайте, как вы можете помочь<br> своим родным в случае <br> непредвиденных обстоятельств
+        a.si-good-section-video__action(href="https://www.youtube.com/embed/T60eT4SW8XE") Смотреть видео 2:15
+        
+        
+  .si-good-section
+    .container.container_s_m
+      .si-layout-section.si-layout-section_s_m
+        .r.r_s_m
+          .r__c.r__c_md_4
+            .si-good-caption
+              .si-good-caption__text Стоимость<br>полиса
+          .r__c.r__c_md_8
+            img(src="/assets/images/good-father-price.png", srcset="/assets/images/good-father-price_2x.png 2x", alt="", style="margin-top: -.625rem;")
+            .r.r_s_m
+        .r.r_s_m
+          .r__c.r__c_md_4
+          .r__c.r__c_md_3
+            .sb-wysiwyg
+              .sb-wysiwyg__p.sb-wysiwyg__p_s_s Выберите сумму страховой<br>защиты Вашей семьи
+          .r__c.r__c_md_3
+            .sb-wysiwyg
+              .sb-wysiwyg__p.sb-wysiwyg__p_s_s При наступлении страхового <br>случая выплачивается<br>компенсация
+          .r__c.r__c_md_2
+            .sb-wysiwyg
+              .sb-wysiwyg__p.sb-wysiwyg__p_s_s Ваша семья защищена<br>в трудной ситуации
+      .si-layout-section.si-layout-section_s_m
+        .si-good-calc
+          form(ng-init="insuranceSum = 600000")
+            .si-good-calc-row
+              .r.r_s_m.r_a_c
+                .r__c.r__c_md_4
+                  .si-good-calc-row__caption Сумма страховой защиты:
+                .r__c.r__c_md_8
+                  .r.r_s_m
+                    .r__c.r__c_md_3
+                      label.sb-good-radio
+                        input(type="radio" ng-model='insuranceSum' ng-value="300000")
+                        span.sb-good-radio__box
+                        span.sb-good-radio__text
+                          span.sb-currency 300 000
+                    .r__c.r__c_md_3
+                      label.sb-good-radio
+                        input(type="radio" ng-model='insuranceSum' ng-value="600000")
+                        span.sb-good-radio__box
+                        span.sb-good-radio__text
+                          span.sb-currency 600 000
+                    .r__c.r__c_md_3
+                      label.sb-good-radio
+                        input(type="radio" ng-model='insuranceSum' ng-value="1500000")
+                        span.sb-good-radio__box
+                        span.sb-good-radio__text
+                          span.sb-currency 1 500 000
+            .si-good-calc-row
+              .r.r_s_m
+                .r__c.r__c_1_3
+                .r__c.r__c_2_3
+                  .r.r_s_m
+                    .r__c.r__c_1_2
+                      .si-good-calc-sum
+                        span.si-good-calc-sum__label Итоговая стоимость: 
+                        span.si-good-calc-sum__n
+                          span.sb-currency(ng-bind="insuranceSum * .00375")
+                    .r__c.r__c_1_2
+                      .si-good-calc-sum
+                        span.si-good-calc-sum__label Срок действия: 
+                        span.si-good-calc-sum__n 1 год
+          .r.r_s_m
+            .r__c.r__c_1_3
+            .r__c.r__c_2_3
+              a.sb-button.sb-button_s_m.sb-button_theme_green(href="#")
+                span.sb-button__text Оформить полис
+            
+  include ../partials/_section-actions
+  include ../partials/_section-declare

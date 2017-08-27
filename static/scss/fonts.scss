@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'als_rublregular';
+  src: url('../fonts/rouble-webfont.woff2') format('woff2'),
+  url('../fonts/rouble-webfont.woff') format('woff'),
+  url('../fonts/rouble-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-LightLF.eot");
+  src: url("../fonts/FedraSansPro-LightLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-LightLF.woff") format('woff'), url("../fonts/FedraSansPro-LightLF.ttf") format('truetype'), url("../fonts/FedraSansPro-LightLF.svg#FedraSansPro-LightLF") format('svg');
+}
+@font-face {
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-LightItalicLF.eot");
+  src: url("../fonts/FedraSansPro-LightItalicLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-LightItalicLF.woff") format('woff'), url("../fonts/FedraSansPro-LightItalicLF.ttf") format('truetype'), url("../fonts/FedraSansPro-LightItalicLF.svg#FedraSansPro-LightItalicLF") format('svg');
+}
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-BookLF.eot");
+  src: url("../fonts/FedraSansPro-BookLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-BookLF.woff") format('woff'), url("../fonts/FedraSansPro-BookLF.ttf") format('truetype'), url("../fonts/FedraSansPro-BookLF.svg#FedraSansPro-BookLF") format('svg');
+}
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-BookItalicLF.eot");
+  src: url("../fonts/FedraSansPro-BookItalicLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-BookItalicLF.woff") format('woff'), url("../fonts/FedraSansPro-BookItalicLF.ttf") format('truetype'), url("../fonts/FedraSansPro-BookItalicLF.svg#FedraSansPro-BookItalicLF") format('svg');
+}
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-DemiLF.eot");
+  src: url("../fonts/FedraSansPro-DemiLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-DemiLF.woff") format('woff'), url("../fonts/FedraSansPro-DemiLF.ttf") format('truetype'), url("../fonts/FedraSansPro-DemiLF.svg#FedraSansPro-DemiLF") format('svg');
+}
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-DemiItalicLF.eot");
+  src: url("../fonts/FedraSansPro-DemiItalicLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-DemiItalicLF.woff") format('woff'), url("../fonts/FedraSansPro-DemiItalicLF.ttf") format('truetype'), url("../fonts/FedraSansPro-DemiItalicLF.svg#FedraSansPro-DemiItalicLF") format('svg');
+}
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-MediumLF.eot");
+  src: url("../fonts/FedraSansPro-MediumLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-MediumLF.woff") format('woff'), url("../fonts/FedraSansPro-MediumLF.ttf") format('truetype'), url("../fonts/FedraSansPro-MediumLF.svg#FedraSansPro-MediumLF") format('svg');
+}
+@font-face {
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-MediumItalicLF.eot");
+  src: url("../fonts/FedraSansPro-MediumItalicLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-MediumItalicLF.woff") format('woff'), url("../fonts/FedraSansPro-MediumItalicLF.ttf") format('truetype'), url("../fonts/FedraSansPro-MediumItalicLF.svg#FedraSansPro-MediumItalicLF") format('svg');
+}
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Fedra Sans';
+  src: url("../fonts/FedraSansPro-BoldLF.eot");
+  src: url("../fonts/FedraSansPro-BoldLF.eot?#iefix") format('embedded-opentype'), url("../fonts/FedraSansPro-BoldLF.woff") format('woff'), url("../fonts/FedraSansPro-BoldLF.ttf") format('truetype'), url("../fonts/FedraSansPro-BoldLF.svg#FedraSansPro-BoldLF") format('svg');
+}

@@ -1,0 +1,42 @@
+extends ../_layout.jade
+
+block content
+  +b.container(ng-controller="siEditorsList as vm")
+    .si-breadcrumbs
+      .si-breadcrumbs__item
+        a.si-breadcrumbs__link(href="#")
+          span.si-breadcrumbs__text Главная
+      span.si-breadcrumbs__text Авторы
+      
+    +b.spacer._s_m
+        .si-h.si-h_type_2 Твоя команда поддержки
+      
+    +b.spacer._s_m.visible-xs
+      .si-select
+        select(ng-model="vm.data.selectedCategory", ng-change="vm.filter(vm.data.selectedCategory)", ng-options="category.name for category in vm.categories track by category.id")
+
+    +b.spacer._s_m.hidden-xs
+      +b.tag-buttons-group
+        +e.item(ng-repeat="category in vm.categories")
+          +b.A.tag-button._theme_c(class="tag-button_type_{{category.code}}" ng-class="{'si-tag-button_active': category === vm.data.selectedCategory}", ng-click="vm.selectCategory(category)", href="#")
+            +e.icon
+            +e.text(ng-bind="category.name")
+                
+    +b.spacer._s_m
+      .si-isotope.si-isotope__container(isotope-container)
+        .si-isotope__item(class="si-isotope__item_s_{{($index + 1) % 3 > 0 ? 's' : 'm'}}", ng-repeat="author in vm.authors", isotope-item, data-category="{{author.category.code}}")
+          a.si-editorcard(href="{{author.url}}")
+            .si-editorcard__overlay
+            .si-editorcard__image(ng-style="{'background-image':'url('+ author.cover_image_url +')'}")
+            .si-editorcard__content
+              .si-editorcard__type: img(ng-src="/assets/images/category_{{author.category.code}}.png", alt="", ng-srcset="/assets/images/category_{{author.category.code}}_2x.png 2x")
+              .si-editorcard__name
+                span(ng-bind="author.name.split(' ')[0]")
+                br
+                span(ng-bind="author.name.split(' ')[1]")
+              .si-editorcard__quote(ng-bind="author.status")
+
+    +b.spacer._s_m(ng-hide="vm.page == vm.pages")
+      .si-layout-section.si-layout-section_a_c
+        a.sb-button.sb-button_s_m.sb-button_theme_a(href="#", ng-click="vm.getAuthors()")
+          span.sb-button__text Загрузить еще

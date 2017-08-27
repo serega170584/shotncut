@@ -1,0 +1,61 @@
+$ctx = '.si-link'
+
+{$ctx}
+  display inline-block
+  font-weight 500
+  transition-timing-function $transition-timing-function
+  transition-duration $transition-duration
+  transition-property all
+
+  {$ctx}__text
+    vertical-align middle
+
+  {$ctx}__text + .sb-icon,
+  {$ctx}__text + .si-icon
+    margin-left .5rem
+
+  .sb-icon + {$ctx}__text
+  .si-icon + {$ctx}__text
+    margin-left .5rem
+
+{$ctx}_theme_action
+  color #009942
+
+  &:hover
+    color #00b400
+
+
+{$ctx}_theme_c
+  @extend {$ctx}_theme_action
+  font-size 1.25rem
+
+
+{$ctx}_theme_d
+  font-size .9375rem
+
+  {$ctx}__text
+    opacity (1/3)
+    transition opacity $transition-duration $transition-timing-function
+
+  &:hover
+    {$ctx}__text
+      opacity 1
+
+
+  .si-icon
+    color #009942
+
+
+{$ctx}_theme_e
+  {$ctx}__text
+    font-size 14px
+    font-style italic
+    opacity (2/3)
+    transition opacity $transition-duration $transition-timing-function
+
+  &:hover
+    {$ctx}__text
+      opacity 1
+
+  {$ctx}__text + .si-icon
+    margin-left 16px

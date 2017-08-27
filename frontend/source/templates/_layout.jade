@@ -1,0 +1,420 @@
+include bemto/bemto.jade
+- set_bemto_settings({ prefix: 'si-' })
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title Сбербанк страхование
+    block stylesheets
+    link(rel='stylesheet', href='/assets/stylesheets/slick.css')
+    link(rel='stylesheet', href='/assets/stylesheets/ngDialog-theme-default.css')
+    link(rel='stylesheet', href='/assets/stylesheets/select2.css')
+    link(rel='stylesheet', href='/assets/stylesheets/application.bundle.css')
+    
+    style.
+      ng-include {
+        display: block;
+      }
+  body
+    .si-menu
+      .si-menu__pane.si-menu__pane_theme_a#si-menu
+        .si-layout-section
+          .si-menu__topbar
+            .container.container_s_m
+              .r.r_s_m.r_a_c
+                .r__c
+                  a.si-link.si-link_theme_c(href="tel:")
+                    span.si-link__text 8 (499) 707-07-37
+                .r__c
+                  a.si-link.si-link_theme_c(href="tel:")
+                    span.si-link__text 8 (800) 555-55-95
+                .r__c
+                  a.sb-button.sb-button_theme_d
+                    span.sb-button__text Перезвоните мне
+                .r__c.r__c_r
+                  a.si-link.si-link_theme_d(href="#")
+                    span.si-icon: include ../assets/svg/ic_location_16px.svg
+                    span.si-link__text Офисы продаж
+        .si-layout-section.si-layout-section_s_m
+          .container.container_s_m
+            .r.r_s_m(si-menu-navigation)
+              .r__c.r__c_md_4
+                ul.si-menu-navigation(si-menu-navigation-pane data-level="0" data-ng-show="active")
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#7aedc7e6-8f97-461c-acf8-552834d8f974")
+                    a.si-menu-navigation__link(href="#") 1.
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#c0343a32-1722-4679-a1ac-ab12c2d98105")
+                    a.si-menu-navigation__link(href="#") Для бизнеса
+                  li.si-menu-navigation__item(si-menu-navigation-toggle)
+                    a.si-menu-navigation__link(href="#") Твоя команда поддержки
+                  li.si-menu-navigation__item(si-menu-navigation-toggle)
+                    a.si-menu-navigation__link(href="#") Компания
+                  li.si-menu-navigation__item(si-menu-navigation-toggle)
+                    a.si-menu-navigation__link(href="#") Партнерам
+              .r__c.r__c_md_8
+                .r.r_s_m
+                  .r__c.r__c_md_4
+                    ul.si-menu-navigation(si-menu-navigation-pane data-level="1" data-ng-show="active")#7aedc7e6-8f97-461c-acf8-552834d8f974
+                      li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#00cafe38-160c-4f5b-b6ad-0c83f9d9bdda")
+                        a.si-menu-navigation__link(href="#") 1.1.
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.2.
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.3.
+                    ul.si-menu-navigation(si-menu-navigation-pane data-level="1" data-ng-show="active")#c0343a32-1722-4679-a1ac-ab12c2d98105
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.4.
+                  .r__c.r__c_md_4
+                    ul.si-menu-navigation(si-menu-navigation-pane data-level="2" data-ng-show="active")#00cafe38-160c-4f5b-b6ad-0c83f9d9bdda
+                      li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#00cafe38-160c-4f5b-b6ad-0c83f9d9bddb")
+                        a.si-menu-navigation__link(href="#") 1.1.1.
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.1.2
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.1.3
+                  .r__c.r__c_md_4
+                    ul.si-menu-navigation(si-menu-navigation-pane data-level="3" data-ng-show="active")#00cafe38-160c-4f5b-b6ad-0c83f9d9bddb
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.1.1.1.
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.1.1.2.
+                      li.si-menu-navigation__item(si-menu-navigation-toggle)
+                        a.si-menu-navigation__link(href="#") 1.1.1.3.
+      .si-menu__pane.si-menu__pane_theme_a#si-menu-goods
+        .si-layout-section.si-layout-section_s_m
+          .container.container_s_m
+            .r.r_s_m(si-menu-navigation)
+              .r__c.r__c_md_4
+                ul.si-menu-navigation(si-menu-navigation-pane data-level="0" data-ng-show="active")
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#7aedc7e6-8f97-461c-acf8-552834d8f975")
+                    a.si-menu-navigation__link(href="#") Путешествия
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#c0343a32-1722-4679-a1ac-ab12c2d98106")
+                    a.si-menu-navigation__link(href="#") Авто
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#dbdda400-d4fb-4d67-923b-ae5b29830672")
+                    a.si-menu-navigation__link(href="#") Здоровье и жизнь
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#49882c34-4a86-4bea-bdcc-3e95eb823eb0")
+                    a.si-menu-navigation__link(href="#") Квартира и дом
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#e7186554-6255-44f2-960e-726f661ddb77")
+                    a.si-menu-navigation__link(href="#") Защита финансов
+                  li.si-menu-navigation__item(si-menu-navigation-toggle data-toggle="#f3142c03-532e-42a7-8547-c1e799fec460")
+                    a.si-menu-navigation__link(href="#") Сотрудникам Группы Сбербанк
+              .r__c.r__c_md_8
+                .si-layout-section#7aedc7e6-8f97-461c-acf8-552834d8f975(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Страхование выезжающих за рубеж
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Страхование выезжающих за рубеж по РФ
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Мультиполис онлайн
+                        
+                .si-layout-section#c0343a32-1722-4679-a1ac-ab12c2d98106(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Страхование выезжающих за рубеж
+                .si-layout-section#dbdda400-d4fb-4d67-923b-ae5b29830672(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Глава семьи онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Защита близкий онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Клещ онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Мультиполис оналйн
+                .si-layout-section#49882c34-4a86-4bea-bdcc-3e95eb823eb0(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Защита дома онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Защищенный заемщик онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Ипотека онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Мультиполис онлайн
+                .si-layout-section#e7186554-6255-44f2-960e-726f661ddb77(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Защита карты онлайн
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Мультиполис онлайн
+                .si-layout-section#f3142c03-532e-42a7-8547-c1e799fec460(si-menu-navigation-pane data-level="1" data-ng-show="active")
+                  .r.r_s_m
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption
+                          | Защита всегда рядом
+                          br
+                          | Дом
+                    .r__c.r__c_md_4
+                      a.si-menu-good(href="#")
+                        .si-menu-good__image(style="background-image: url(//unsplash.it/448/296/?random&id=0009);")
+                        .si-menu-good__caption Энергия жизни
+      .si-menu__pane.si-menu__pane_theme_b#si-menu-how-works
+        .container.container_s_m
+          .si-layout-section.si-layout-section_s_m
+            .si-work-steps
+              .r.r_s_m
+                .r__c.r__c_md_4
+                  .si-work-steps__item
+                    .si-work-steps__image
+                      img(src="/assets/images/how-works-1.png", srcset="/assets/images/how-works-1_2x.png 2x", alt="")
+                    .si-work-steps__text
+                      |Присоединяйтесь
+                      br
+                      | к жизни в стиле SberLife
+                .r__c.r__c_md_4
+                  .si-work-steps__item
+                    .si-work-steps__image
+                      img(src="/assets/images/how-works-2.png", srcset="/assets/images/how-works-2_2x.png 2x", alt="")
+                    .si-work-steps__text
+                      | Занимайтесь любимым
+                      br
+                      | делом, узнавайте новое,
+                      br
+                      | делитесь своим опытом
+                .r__c.r__c_md_4
+                  .si-work-steps__item
+                    .si-work-steps__image
+                      img(src="/assets/images/how-works-3.png", srcset="/assets/images/how-works-3_2x.png 2x", alt="")
+                    .si-work-steps__text
+                      | Получайте сберкоины
+                      br
+                      | и будьте уверены –
+                      br
+                      | мы вас поддержим!
+          .si-layout-section.si-layout-section_s_m.si-layout-section_a_c
+            a.sb-button.sb-button_s_m.sb-button_theme_c(href="#")
+              span.sb-button__text Изменить свое будущее
+      .si-menu__pane.si-menu__pane_theme_a#si-menu-request
+        .container.container_s_m#menu-request
+          .si-layout-section.si-layout-section_s_m
+            .si-h.si-h_type_2 Урегулируйте убыток
+          .si-layout-section.si-layout-section_s_s
+            .r.r_s_m
+              .r__c.r__c_md_4(style="border-right: 1px solid #e5e5e5; padding: 0 48px 0 16px;")
+                .si-h.si-h_type_3 В личном кабинете
+                .si-layout-section.si-layout-section_s_s
+                  a.sb-button.sb-button_s_m.sb-button_theme_e(href="#")
+                    span.sb-button__text ООО СК “Сбербанк страхование”
+                .si-layout-section.si-layout-section_s_s
+                  a.sb-button.sb-button_s_m.sb-button_theme_e(href="#")
+                    span.sb-button__text ООО СК “Сбербанк страхование жизни”
+              .r__c.r__c_md_4(style="border-right: 1px solid #e5e5e5; padding: 0 48px;")
+                +b.si-h._type_3 Через заявку на сайте
+                +b.si-layout-section._s_s
+                  +b.INPUT.si-input._theme_b(type="text", placeholder="Что произошло?")
+                +b.si-layout-section._s_s
+                  +b.A.sb-button._theme_e._s_m(show="#request", hide="#menu-request", style="width: 140px;", si-menu-tab-toggle)
+                    +e.text Далее
+              .r__c.r__c_md_4(style="padding: 0 16px 0 48px;")
+                .si-h.si-h_type_3 По телефону
+                .si-layout-section.si-layout-section_s_s
+                  a.si-link.si-link_theme_c(href="tel:")
+                    span.si-link__text 8 (499) 707-07-37
+                  .small-text ООО СК “Сбербанк страхование”
+                .si-layout-section.si-layout-section_s_s
+                  a.si-link.si-link_theme_c(href="tel:")
+                    span.si-link__text 8 (499) 707-07-37
+                  .small-text ООО СК “Сбербанк страхование жизни”
+        .container.container_s_m#request(style="display: none;")
+          +b.si-layout-section._s_m
+            +b.si-request
+              +e.A.close(show="#menu-request", hide="#request", si-menu-tab-toggle)
+                span Заявка на получение выплаты
+              +e.FORM.form
+                +b.si-layout-section._s_s
+                  .r.r_s_m
+                    .r__c.r__c_md_6
+                      +b.INPUT.si-input._theme_b(type="text", placeholder="№ полиса")
+                    .r__c.r__c_md_6
+                      +b.INPUT.si-input._theme_b(type="text")
+                +b.si-layout-section._s_s
+                  .r.r_s_m
+                    .r__c.r__c_md_6
+                      +b.INPUT.si-input._theme_b(type="text", placeholder="ФИО")
+                    .r__c.r__c_md_6
+                      +b.INPUT.si-input._theme_b(type="text", placeholder="Email")
+                +b.si-layout-section._s_s
+                  +b.TEXTAREA.si-input._theme_b._type_textarea(rows="3", placeholder="Комментарий")
+                +b.si-layout-section._s_s
+                  +b.BUTTON.sb-button._theme_e._s_m(type="submit", style="width: auto;")
+                    +e.text Свяжитесь со мной
+      a.si-menu__close(href="#", si-menu-close)
+
+
+        
+
+    .si-layout.si-layout_theme_a(style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;")
+      .si-layout__backdrop(si-menu-close)
+      .si-layout__header
+        .si-b-search
+          .container.container_s_m
+            .si-b-search__container
+              input.si-b-search__control(type="text")
+              a.si-b-search__close(href="#", si-search-toggle, toggle="false")
+                include ../assets/svg/ic_close_24px.svg
+        +b.header
+          .container
+            .r
+              .r__c
+                +e.toggle
+                  +b.A.link(href="#si-menu", si-menu-toggle)
+                    +e.icon.icon__: include ../assets/svg/ic_menu_24px.svg
+              .r__c
+                +e.logo.logo__
+              .r__c.r__c_r
+                +e.navigation.navigation__
+                  +e.list._left
+                    +e.item
+                      +e.A.link.link__(href="#si-menu-goods", si-menu-toggle)
+                        +e.icon.icon__: include ../assets/svg/ic_bag_24px.svg
+                        +e.text Купить полис
+                    +e.item
+                      +e.A.link.link__(href="#si-menu-request", si-menu-toggle)
+                        +e.icon.icon__: include ../assets/svg/ic_get_24px.svg
+                        +e.text Получить выплату
+                    +e.item
+                      +e.A.link.link__
+                        +e.icon.icon__: include ../assets/svg/ic_power_24px.svg
+                        +e.text Активировать полис
+                  +e.list._right
+                    +e.item
+                      +e.A.link.link__
+                        +e.icon.icon__: include ../assets/svg/ic_lk_24px.svg
+                    +e.item
+                      +e.A.link.link__(si-search-toggle, toggle="true")
+                        +e.icon.icon__: include ../assets/svg/ic_search_24px.svg
+      .si-layout__container
+        block layout
+        +b.footer
+          +b.footer-topline
+            +e.item
+              +e.A.link.link__
+                +e.icon.icon__: include ../assets/svg/ic_power_24px.svg
+                +e.text Активировать полис
+            +e.item
+              +e.A.link.link__
+                +e.icon.icon__: include ../assets/svg/ic_lk_24px.svg
+                +e.text Личный кабинет
+            +e.item
+              +e.A.link.link__
+                +e.icon.icon__: include ../assets/svg/ic_get_24px.svg
+                +e.text Страховой случай
+          .si-container.si-hidden-sm
+            .si-footer__section
+              .si-layout-section
+                .r.r_s_m
+                  .r__c.r__c_md_3
+                    .si-footer-caption
+                      span.si-footer-caption__text Компания
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Партнерам
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Вакансии
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Для прессы
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Новости
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text О нас
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Команда
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Контакты
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Раскрытие информации
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Закупки
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Публикуемая отчетность
+                  .r__c.r__c_md_3
+                    .si-footer-caption
+                      span.si-footer-caption__text Сообщество
+                    a.si-footer__link.si-link
+                      span.si-link__text Амбассадоры
+                    a.si-footer__link.si-link
+                      span.si-link__text Статьи
+                    a.si-footer__link.si-link
+                      span.si-link__text Финансовая грамотность
+                    a.si-footer__link.si-link
+                      span.si-link__text Эксперты
+                  .r__c.r__c_md_3
+                    .si-footer-caption
+                      span.si-footer-caption__text Офис
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Контакты
+                    a.si-footer__link.si-link(href="#")
+                      span.si-link__text Офисы продаж
+                    .si-footer-contacts
+                      a.si-footer-contacts__link.si-link(href="#")
+                        span.si-link__text 8 499 707 07 37
+                      a.si-footer-contacts__link.si-link(href="#") 
+                        span.si-link__text 8 800 555 55 95
+                    .si-footer-feedback
+                      a.si-footer-feedback__button.sb-button(href="#", ng-dialog="/templates/feedback.dialog.tpl.html", ng-dialog-close-previous)
+                        span.sb-button__text Обратная связь
+                  .r__c.r__c_md_3
+                    .si-footer-caption
+                      .si-footer-caption__text Сервисы
+                    a.si-footer__service-link.si-footer__service-link_activate.si-link(href="#")
+                      span.si-link__text Активировать полис
+                    a.si-footer__service-link.si-footer__service-link_signin.si-link(href="#")
+                      span.si-link__text Личный кабинет
+                    a.si-footer__service-link.si-footer__service-link_accident.si-link(href="#")
+                      span.si-link__text Страховой случай
+              .si-layout-section.si-layout-section_s_s
+                .si-footer-social
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_odnoklassniki(href="#")
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_vk(href="#")
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_instagram(href="#")
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_youtube(href="#")
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_twitter(href="#")
+                  .si-footer-social__item
+                    a.si-footer-social__link.si-footer-social__link_facebook(href="#")
+
+            .si-footer__section.si-footer__section_bottom
+              .r.r_s_m.r_a_b
+                .r__c.r__c_md_4 © 2014—2015 Сбербанк cтрахование
+                .r__c.r__c_md_6
+                  .si-footer__license Лицензия 77 С 3692 от 25 августа 2014. Регистрационный номер – 3692
+                .r__c.r__c_r
+                  a.si-footer__aic.si-link(href="//aic.ru", target="_blank")
+            
+    
+    script(src="//yastatic.net/share2/share.js", async)    
+    script(src='/assets/javascripts/bundle.min.js')

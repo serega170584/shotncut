@@ -1,0 +1,56 @@
+.cc_use_controls {
+  margin: 1em 0 4em;
+}
+
+.cc_use_part_controls {
+  margin: 0.5em 0 0;
+}
+
+.cc_use_part_title {
+  margin: 0 0 0.5em;
+  font-weight: bold;
+}
+
+.cc_inner_line {
+  margin: 0 0 0.5em;
+}
+
+.cc_inner_line.form-inline .form-control {
+  width: 70%;
+}
+
+.cc_inner_controls {
+  margin: 1.5em 0 0;
+}
+
+.cc_inner_line label {
+  font-weight: normal;
+}
+
+
+.cc_accordion_use_slide_line,
+.cc_contentSlider_use_slide {
+  margin: 2em 0;
+  padding: 2em 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.cc_accordion_use_slide_line:last-child,
+.cc_contentSlider_use_slide:last-child {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.cc_contentSlider_use_slide_line {
+  margin-top: 1em;
+}
+
+.form-control.cc_accordion_use_slide_line_header,
+.cc_inner_line.form-inline .form-control.cc_contentSlider_use_slide_header {
+  width: 50%;
+}
+
+.cc_contentSlider_use_slide_line .cc_contentSlider_use_slide_line_header.form-control {
+  width: 60%;
+}

@@ -1,0 +1,143 @@
+.b-dropdown {
+  font-size: $regularFontSize;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: #fff;
+  border-radius: $inputBorderRadius;
+  color: $linkColor;
+  box-shadow: $boxShadow;
+
+  &.b-dropdown__scroll{
+    .b-dropdown__text{
+      height: $inputsHeight;
+    }
+    .b-dropdown__sub{
+      max-height: 260px;
+      overflow-y: scroll;
+      margin-top: 1px;
+
+      li:first-child{
+        border-top: none;
+      }
+    }
+  }
+
+  &.b-dropdown_open{
+    z-index: 2;
+
+    .b-dropdown__item{
+      &.active{
+        background: rgba(0,0,0, .05);
+      }
+    }
+
+    .b-dropdown__text{
+      background: rgba(0,0,0, .05);
+    }
+
+    &.first-open{
+      .b-dropdown__sub{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        margin-top: $inputsHeight * -1;
+        border-radius: 6px;
+
+        .b-dropdown__item:first-child{
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+.b-dropdown_open .b-dropdown__sub{
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.b-dropdown__sub {
+  position: relative;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: auto;
+  //max-height: 228px;
+  min-width: 100%;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+}
+
+.b-dropdown__item,
+.b-dropdown__text {
+  display: block;
+  padding: 13px 18px;
+  background: transparent;
+  border-top: $border;
+  color: $linkColor;
+  transition: background .2s;
+  cursor: pointer;
+}
+.b-feedback__item .b-dropdown__item,
+.b-feedback__item .b-dropdown__text
+{
+  padding: 11px 18px;
+}
+
+.b-dropdown__text
+{
+  border: none;
+  border-radius: 5px 5px 0 0;
+  height: $inputsHeight;
+  box-sizing: border-box;
+  white-space: nowrap;
+  position: relative;
+
+  &:hover{
+    color: $linkColorHover;
+  }
+}
+
+.b-dropdown > .b-dropdown__text
+{
+  overflow: hidden;
+  padding-right: 18px;
+  text-overflow: ellipsis;
+}
+
+.b-dropdown__item:last-child
+{
+  border-radius: 0 0 5px 5px;
+}
+
+.b-dropdown__item:hover,
+.b-dropdown_open .b-dropdown__text:hover {
+  color: $linkColorHover;
+  background: rgba(0,0,0, .05);
+}
+
+.b-dropdown__arrow {
+
+}
+
+.b-dropdown_deployed.b-dropdown_open .b-dropdown__arrow
+{
+  display: none;
+}
+@media only screen and (min-width: 1600px){
+  @import "variables_media_1600";
+
+  .b-dropdown{
+    font-size: $regularFontSize;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  @import "variables_media_tablet";
+
+  .b-dropdown{
+    font-size: $regularFontSize;
+  }
+}

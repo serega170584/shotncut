@@ -1,0 +1,84 @@
+
+
+.sb-wysiwyg
+  h2
+    font-size 30px
+    line-height 40px
+    font-weight 500
+    margin-bottom 1em
+  &__p
+    &_s_s
+      font-size .875rem
+      line-height 1.5rem
+
+    &_s_m
+      line-height 1.75rem
+
+    p
+      margin .75rem 0
+
+      &:first-child
+        margin-top 0
+
+      &:last-child
+        margin-bottom 0
+
+    &_s_l
+      font-size 1.25rem
+      line-height 1.875rem
+
+
+  ul
+    &::after
+      clear both
+    &::before
+    &::after
+      display table
+      content ''
+    li
+      float left
+      margin .75rem 0 0
+      width 50%
+      position relative
+      font-weight 500
+      &::before
+        width .5rem
+        height .5rem
+        display inline-block
+        background #009942
+        border-radius 50%
+        margin-right .75rem
+        content ''
+
+hr
+  border 0
+  margin 2.25rem 0 2.25rem
+  height .0625rem
+  background #f4f4f4
+
+
+.sb-good-card-feature
+  position relative
+  padding-left 4.125rem
+
+  &__image
+    position absolute
+    top 0
+    left 0
+
+  &__caption
+    font-weight 500
+    font-size 1.125rem
+    line-height 3.25rem
+
+    span
+      display inline-block
+      vertical-align middle
+      line-height 1.625rem
+
+  &__text
+    margin-top 12px
+    font-weight 500
+    font-size .875rem
+    line-height 1.5rem
+    opacity .5

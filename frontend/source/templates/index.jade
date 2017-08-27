@@ -1,0 +1,55 @@
+extends _layout
+
+block layout
+  .si-layout__body.si-layout__body_accentuated(ng-controller="siMainController as vm")
+    .si-hero
+      .si-hero__overlay
+        video(autoplay, loop, muted)
+          source(src="//sberlife.ru/local/templates/default/assets/videos/SBER_Strahovanie.mp4", type="video/mp4")
+      .si-hero__container
+        .si-layout-section.si-layout-section_s_m
+          .si-hero__text
+            | #sberlife - Делай что любишь
+            br
+            | мы поддержим
+          .r.r_s_m.r_j_c
+            .r__c
+              .si-layout-section.si-layout-section_s_m
+                a.sb-button.sb-button_s_m.sb-button_theme_a
+                  span.sb-button__text Стать участником
+            .r__c
+              .si-layout-section.si-layout-section_s_m
+                a.sb-button.sb-button_s_m.sb-button_theme_b(href="#si-menu-how-works", si-menu-toggle)
+                  span.sb-button__text Как это работает
+    +b.container
+      +b.spacer._s_m
+        .si-panel.si-panel_s_s
+          .r.r_s_s
+            .r__c(ng-repeat="type in vm.types")
+              a.si-tag-button.si-tag-button_theme_a(href="#", ng-click="vm.filter(type)", ng-class="{'si-tag-button_active': type.active}")
+                span.si-tag-button__text(ng-bind="type.name")
+      +b.spacer._s_m(style="display: none;")
+        .r(style="padding-left: .5rem;")
+          .r__c
+            a.si-tag-button.si-tag-button_theme_b.si-tag-button_active(href="#")
+              span.si-tag-button__text Все
+          .r__c
+            a.si-tag-button.si-tag-button_theme_b(href="#")
+              span.si-tag-button__text Образование
+          .r__c
+            a.si-tag-button.si-tag-button_theme_b(href="#")
+              span.si-tag-button__text Путешествия
+          .r__c
+            a.si-tag-button.si-tag-button_theme_b(href="#")
+              span.si-tag-button__text Квартира и дом
+          .r__c
+            a.si-tag-button.si-tag-button_theme_b(href="#")
+              span.si-tag-button__text Здоровье и жизнь
+      +b.spacer._s_m
+        .si-isotope.si-isotope__container(isotope-container)
+          .si-isotope__item.si-isotope__item_s_s(data-type="{{node.type.code}}", ng-repeat="node in vm.nodes", isotope-item, style="height: 560px;")
+            si-node(data="node")
+      +b.spacer._s_m(ng-hide="vm.page == vm.pages")
+        .si-layout-section.si-layout-section_a_c
+          a.sb-button.sb-button_s_m.sb-button_theme_a(href="#", ng-click="vm.getNodes()")
+            span.sb-button__text Загрузить еще

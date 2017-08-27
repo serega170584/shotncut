@@ -1,0 +1,50 @@
+$overlay
+  &__overlay
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+    opacity 0
+    background #42984a
+    transition all .3s $transition-timing-function
+
+    ~/:hover &
+      opacity .875
+
+
+$background-image
+  &__background
+    position absolute
+    top 0
+    right 0
+    left 0
+    bottom 0
+    background-size cover
+    background-position 50% 50%
+    background-repeat no-repeat
+    background-color rgba(#000, .4)
+    background-blend-mode multiply
+    z-index -1
+    transform scale(1)
+    transition transform .5s $transition-timing-function
+
+    ~/:hover &
+      transform scale(1.125)
+
+$clearfix
+  &::after
+  &::before
+    content ''
+    display table
+
+  &::after
+    clear both
+
+screen-xs()
+  @media screen and (max-width: 767px)
+    {block}
+
+screen-sm()
+  @media screen and (min-width: 768px) and (max-width: 1199px)
+    {block}

@@ -1,0 +1,57 @@
+$fedraFont: 'Fedra Sans';
+$rouble: 'als_rublregular';
+
+$minWidth: 1200px;
+
+$regularFontSize: 17px;
+$regularFontLineHeight: 27px;
+
+$biggerFontSize: 19px;
+$biggerFontLineHeight: 29px;
+
+$smallerFontSize: 16px;
+$smallerFontLineHeight: 25px;
+
+$wrapperVal: 0 5.5%;
+
+$regularColor: #000;
+$greyColor: rgba(0,0,0, .4);
+$linkColor: #3aac6a;
+$linkColorBorder: rgba(58,172,106, .33);
+$linkColorHover: #3b955f;
+$linkColorHoverBorder: rgba(59,149,95, .33);
+//$linkColorActive: #FFC800;
+
+$yellowColor: #ffca4a;
+
+$bgPicColor: #345247;
+
+$bgColor: #f9f9f9;
+
+$topHeaderPadding: 27px;
+
+$border: 1px solid rgba(0,0,0,.1);
+$borderWhite: 1px solid rgba(255,255,255,.1);
+
+$borderGreyColor: rgba(0,0,0,.1);
+$borderWhiteColor: rgba(255,255,255,.1);
+
+$inputsHeight: 53px;
+$inputBorderRadius: 5px;
+
+$buttonHeight: 56px;
+$buttonSmallHeight: 46px;
+
+$boxShadow: 0 0 40px rgba(0, 0, 0, 0.1);
+$boxShadow2: 0 0 30px rgba(0, 0, 0, 0.2);
+
+
+// placeholder
+@mixin placeholder ($color, $selector)
+{
+  $selector: unquote($selector);
+  #{$selector}::-webkit-input-placeholder{color: $color;}
+  #{$selector}:-moz-placeholder{color: $color;}
+  #{$selector}::-moz-placeholder{color: $color;}
+  #{$selector}:-ms-input-placeholder{color: $color;}
+}

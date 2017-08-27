@@ -1,0 +1,1593 @@
+// Variables and mixins
+@require '_variables.styl'
+@require '_helpers.styl'
+
+// Resets and dependencies
+@require '_fonts.styl'
+@require '_reset.styl'
+@require '_scaffolding.styl'
+
+@require '_sprite.styl'
+
+@require 'desktop/_button.styl'
+@require 'desktop/_icon.styl'
+@require 'desktop/_container.styl'
+@require 'desktop/_link.styl'
+@require 'desktop/_milestone.styl'
+@require 'desktop/_good-info.styl'
+@require 'desktop/_section.styl'
+@require 'desktop/_footer.styl'
+@require 'desktop/_topbar.styl'
+@require 'desktop/_breadcrumbs.styl'
+
+@require 'good/_activate.styl'
+@require 'good/_info.styl'
+@require 'good/_calculation.styl'
+@require 'good/_caption.styl'
+@require 'good/_declare.styl'
+@require 'good/_documentation.styl'
+@require 'good/_radio.styl'
+@require 'good/_section.styl'
+
+.si-article__sentence
+  p
+    font-size 18px
+    line-height 30px
+    margin 30px 0
+.si-article__wysiwyg
+  h1
+    font-weight 500
+    font-size 28px
+    line-height 30px
+    margin 1.875rem 0 1.875rem
+  h2
+    font-weight 500
+    font-size 18px
+    line-height 25px
+    margin 1.875rem 0 .9375rem
+
+  p
+    font-size .9375rem
+    line-height 2
+    margin 15px 0
+
+.si-avatar
+  display inline-block
+  vertical-align top
+  overflow hidden
+  border-radius 50%
+
+  img
+    width 100%
+
+  &_s_m
+    width 80px
+    height 80px
+
+  &_s_s
+    width 40px
+    height 40px
+
+  &_s_l
+    width 110px
+    height 110px
+
+.si-article-widgets
+  &__caption
+    font-weight 700
+    font-size 12px
+    line-height 30px
+    text-transform uppercase
+    opacity (1/3)
+
+.si-article-widget
+  margin-top 16px
+  margin-bottom 40px
+
+  &__name
+    position relative
+    display block
+    border-top 1px solid #e0e0e0
+    border-bottom 1px solid #e0e0e0
+    padding 12px 0
+    font-weight 500
+    font-size 15px
+    line-height 24px
+
+    &::after
+      sprite(si-article-widget-arrow)
+      position absolute
+      bottom -.375rem
+      left .875rem
+      content ''
+
+    &:hover
+      color #44994c
+
+.si-article-widget-author
+  display table
+  margin-top 24px
+
+  &__c
+    display table-cell
+    vertical-align middle
+    padding-right 16px
+
+  &__name
+    font-size 14px
+    line-height 24px
+
+  &__meta
+    font-size 11px
+    text-transform uppercase
+    opacity (1/3)
+
+
+.si-article-share
+  margin 2.625rem 0
+
+  &__caption
+    font-size 12px
+    opacity (1/3)
+    margin-right 24px
+
+.si-article-blockqoute
+  padding 5.25rem 0
+  margin 40px 0
+  background #ededed
+
+  &__text
+    position relative
+    font-size 1.5rem
+    line-height 2.25rem
+
+    &::after
+      content ''
+      position absolute
+      left -5.75rem
+      top 0
+      sprite(si-article-blockqoute)
+
+.si-article__tags
+  margin 2.625rem 0
+
+.si-layout__body
+  padding-top 80px
+  position relative
+  &::after
+  &::before
+    content ''
+    display table
+
+  &::after
+    clear both
+
+.si-layout__body_accentuated
+  background #f4f4f4
+
+.si-related-articles__topbar
+  border-top .0625rem solid #e8e8e8
+  padding 1.5rem 0
+
+.si-related-article
+  color #fff
+  background-position 50%
+  background-size cover
+  background-repeat no-repeat
+  background-color rgba(#000, .5)
+  background-blend-mode overlay
+  padding 9.5rem 0 4.125rem
+  &__name
+    font-weight 500
+    font-size 2.375rem
+    line-height 2.5rem
+    margin-bottom 44px
+
+  &__author
+    font-size 14px
+
+$ctx = '.si-article-stats'
+{$ctx}
+  cursor default
+
+{$ctx}__link
+  opacity (1/3)
+  font-weight 500
+  font-size 13px
+  transition opacity $transition-duration $transition-timing-function
+
+  &:hover
+    opacity 1
+
+{$ctx}__item
+  display inline-block
+  vertical-align top
+
+  & + &
+    margin-left 8px
+
+{$ctx}__icon
+  display inline-block
+  vertical-align middle
+  margin-right 8px
+
+
+{$ctx}_theme_a
+  {$ctx}__item
+    &_type_likes {$ctx}__icon
+      sprite(ic_likes_16px)
+    &_type_comments {$ctx}__icon
+      sprite(ic_comments_16px)
+
+{$ctx}_theme_b
+  {$ctx}__item
+    &_type_likes {$ctx}__icon
+      sprite(ic_likes_black_16px)
+    &_type_comments {$ctx}__icon
+      sprite(ic_comments_black_16px)
+
+
+.si-article-replies
+  margin-bottom 40px
+
+  &__caption
+    font-size 18px
+
+  &__head
+    border-top 1px solid #e8e8e8
+    padding-top 40px
+    margin-bottom 40px
+
+.si-replies
+  .si-replies__item + .si-replies__item
+    margin-left 120px
+
+.si-replies__item
+  position relative
+  border-radius 6px
+  background-color rgb(255, 255, 255)
+  box-shadow 1px 1px 3px 0px rgba(0, 0, 0, 0.1)
+  padding 30px 100px 20px 20px
+  margin 20px 0
+
+.si-replies__avatar
+  position absolute
+  left 20px
+  top 20px
+
+.si-replies__details
+  color #999
+  font-size 12px
+  line-height 20px
+  margin-top 24px
+
+.si-replies__username
+  font-weight 500
+  font-size 15px
+  line-height 24px
+
+.si-replies__body
+  padding-left 100px
+.si-replies__text
+    font-size 14px
+    line-height 24px
+    opacity (2/3)
+    margin-top 6px
+
+
+.si-stats-button
+  &__text
+    font-size 12px
+    font-weight 500
+    opacity (1/3)
+  &__icon
+    display inline-block
+    border-radius 50%
+    vertical-align middle
+    width 42px
+    height 42px
+    border 2px solid #dadada
+    position relative
+    &::after
+      position absolute
+      left 50%
+      top 50%
+      transform translate3d(-50%, -50% ,0)
+      content ''
+
+.si-stats-button__text + .si-stats-button__icon
+  margin-left 8px
+.si-stats-button__icon + .si-stats-button__text
+  margin-left 8px
+
+.si-stats-button_type_comments
+  .si-stats-button__icon::after
+      sprite(ic_comments_green_16px)
+.si-stats-button_type_rss
+  .si-stats-button__icon::after
+      sprite(ic_rss_green_16px)
+.si-stats-button_type_likes
+  .si-stats-button__icon::after
+      sprite(ic_likes_green_16px)
+
+.si-related-articles__more
+  font-weight 600
+  font-size .9375rem
+
+  .si-link
+    font-size .75rem
+    text-transform uppercase
+
+$ctx = '.si-article-hero'
+.si-article-hero
+  color #fff
+  position relative
+  overflow hidden
+  background-size cover
+  background-repeat no-repeat
+  background-position 50% 50%
+  background-blend-mode overlay
+  background-color #474747
+
+{$ctx}__bottom
+  border-top 1px solid rgba(#fff, .25)
+  margin-top 32px
+  padding-top 32px
+  padding-bottom 32px
+
+{$ctx}__user
+  margin-top 64px
+  margin-bottom 64px
+
+{$ctx}__user-name
+  font-weight 500
+  font-size 28px
+{$ctx}__name
+  font-weight 500
+  font-size 38px
+  line-height 40px
+{$ctx}__counter
+  margin-top 12px
+  font-size 14px
+
+{$ctx}__published
+  font-size 12px
+  text-transform uppercase
+  opacity .5
+
+.si-user
+  display table
+
+  .si-avatar_s_l
+    margin-right 32px
+
+.si-user__avatar
+.si-user__sentence
+  display table-cell
+  vertical-align middle
+$ctx = '.ya-share2'
+{$ctx}__title
+  display none
+{$ctx}__badge
+  display block
+  position relative
+  overflow hidden
+  border-radius 2px
+{$ctx}__icon
+  position absolute
+  top 50%
+  left 50%
+  transform translate3d(-50%, -50%, 0)
+  sprite-image()
+  sprite-size()
+
+{$ctx}__container
+  margin-right -10px
+  &_size_l
+    {$ctx}__badge
+      width 44px
+      height 44px
+    {$ctx}__item
+      margin-right 10px
+  &_size_m
+    {$ctx}__badge
+      width 30px
+      height 30px
+    {$ctx}__item
+      margin-right 10px
+
+{$ctx}__container_size_l
+  {$ctx}__item_service_vkontakte
+    {$ctx}__icon
+      sprite-width(ic_vk_l)
+      sprite-height(ic_vk_l)
+      sprite-position(ic_vk_l)
+
+  {$ctx}__item_service_facebook
+    {$ctx}__icon
+      sprite-width(ic_facebook_l)
+      sprite-height(ic_facebook_l)
+      sprite-position(ic_facebook_l)
+
+  {$ctx}__item_service_odnoklassniki
+    {$ctx}__icon
+      sprite-width(ic_ok_l)
+      sprite-height(ic_ok_l)
+      sprite-position(ic_ok_l)
+
+{$ctx}__container_size_m
+  {$ctx}__item_service_vkontakte
+    {$ctx}__icon
+      sprite-width(ic_vk_s)
+      sprite-height(ic_vk_s)
+      sprite-position(ic_vk_s)
+
+  {$ctx}__item_service_facebook
+    {$ctx}__icon
+      sprite-width(ic_facebook_s)
+      sprite-height(ic_facebook_s)
+      sprite-position(ic_facebook_s)
+
+  {$ctx}__item_service_odnoklassniki
+    {$ctx}__icon
+      sprite-width(ic_ok_s)
+      sprite-height(ic_ok_s)
+      sprite-position(ic_ok_s)
+
+{$ctx}__item
+  display inline-block
+  vertical-align middle
+  &_service_odnoklassniki
+    {$ctx}__badge
+      background #e18d28
+
+  &_service_vkontakte
+    {$ctx}__badge
+      background #5684bf
+
+  &_service_facebook
+    {$ctx}__badge
+      background #4e65b0
+
+.si-article-media
+  margin 64px 0
+
+  &__object
+    overflow hidden
+    border-radius 4px
+
+    img
+    iframe
+      display block
+      width 100%
+      height 29rem
+
+  &__copyright
+    padding 24px 0
+    font-size 14px
+    color #ababab
+    border-bottom 1px solid #e8e8e8
+
+.si-article-slider
+  margin 64px 0
+  .si-article-media
+    margin 0
+  &__carousel
+    margin-top 24px
+
+  &__arrow
+    display block
+    opacity (1/3)
+    sprite-image()
+    sprite-size()
+    width 30px
+    height 30px
+
+    &:hover
+      opacity 1
+
+    &_prev
+      sprite-position(ic_slider_prev_black_30px)
+      &:hover
+        sprite-position(ic_slider_prev_green_30px)
+
+    &_next
+      sprite-position(ic_slider_next_black_30px)
+      &:hover
+        sprite-position(ic_slider_next_green_30px)
+
+  &__pos
+    font-weight 500
+    font-size 14px
+
+  &__pos-d
+    opacity (1/3)
+    margin 0 4px
+
+
+$ctx = '.si-tag-button'
+{$ctx}
+  display inline-block
+  overflow hidden
+
+{$ctx}_theme_a,
+{$ctx}_theme_b
+  padding-right 12px
+  padding-left 12px
+  margin 2px 0
+  border-radius 3px
+
+  {$ctx}__text
+    font-weight 600
+    font-size .875rem
+    line-height 1.75rem
+    opacity (1/3)
+
+{$ctx}_theme_a
+  &{$ctx}_active
+    background #d3e120
+    {$ctx}__text
+      opacity (2/3)
+
+{$ctx}_theme_b
+  &{$ctx}_active
+    background #009942
+    {$ctx}__text
+      color #fff
+      opacity 1
+
+{$ctx}_theme_c
+  background #fff
+  padding-right .75rem
+  padding-left .75rem
+  border-radius .25rem
+
+  {$ctx}__icon
+    display inline-block
+    vertical-align middle
+    sprite-image()
+    sprite-size()
+    width 24px
+    height 24px
+    margin-right 8px
+
+  &{$ctx}_type_all
+    padding-left 24px
+    padding-right 24px
+
+    {$ctx}__icon
+      display none
+
+  &{$ctx}_type_business-and-jobs
+    {$ctx}__icon
+      sprite-position(type_business_button)
+    &{$ctx}_active
+      {$ctx}__icon
+        sprite-position(type_business_button_white)
+
+  &{$ctx}_type_big-city
+    {$ctx}__icon
+      sprite-position(type_city_button)
+    &{$ctx}_active
+      {$ctx}__icon
+        sprite-position(type_city_button_white)
+
+  &{$ctx}_type_family-and-house
+    {$ctx}__icon
+      sprite-position(type_family_button)
+    &{$ctx}_active
+      {$ctx}__icon
+        sprite-position(type_family_button_white)
+
+  &{$ctx}_type_flourishing-of-life
+    {$ctx}__icon
+      sprite-position(type_life_button)
+
+    &{$ctx}_active
+      {$ctx}__icon
+        sprite-position(type_life_button_white)
+
+  &{$ctx}_type_travel-and-adventure
+    {$ctx}__icon
+      sprite-position(type_travel_button)
+    &{$ctx}_active
+      {$ctx}__icon
+        sprite-position(type_travel_button_white)
+
+  {$ctx}__text
+    line-height 3.125rem
+    font-size .75rem
+    text-transform uppercase
+    font-weight 700
+
+  &{$ctx}_active
+    background #42984a
+    {$ctx}__text
+      color #fff
+
+$ctx = '.si-multipurpose-card'
+{$ctx}
+  position relative
+  display block
+  height 560px
+  overflow hidden
+  border-radius 6px
+  z-index 9
+  color #fff
+  @extend $overlay
+  @extend $background-image
+
+  &__action
+    position absolute
+    left 40px
+    right 40px
+    bottom 110px
+    transition all .3s $transition-timing-function
+    opacity 0
+
+    ~/:hover &
+      opacity 1
+
+{$ctx}__container
+  position absolute
+  top 2.5rem
+  right 2.5rem
+  left 2.5rem
+  bottom 2.5rem
+
+{$ctx}__caption
+  font-weight 500
+  font-size 22px
+  line-height 1.875rem
+
+{$ctx}_type_policy
+  {$ctx}__text
+    font-weight 500
+    font-size 15px
+    margin-top 12px
+    line-height 20px
+
+
+
+$ctx = '.si-menu'
+{$ctx}
+  position fixed
+  top 0
+  left 0
+  z-index 0
+  right 0
+
+{$ctx}__pane
+  display none
+
+  &::after
+  &::before
+    content ''
+    display table
+
+  &::after
+    clear both
+
+  &_theme_b
+    background #009942
+  &_active
+    display block
+
+{$ctx}__close
+  position absolute
+  top 1.8125rem
+  right 2rem
+  opacity .5
+  sprite(ic_close_menu)
+  transition opacity $transition-duration $transition-timing-function
+  &:hover
+    opacity 1
+
+
+.si-layout
+  position relative
+  background #fff
+
+.si-layout__backdrop
+  position absolute
+  top 80px
+  right 0
+  bottom 0
+  left 0
+  background rgba(0, 0, 0, .75)
+  z-index 99999
+  opacity 0
+  display none
+
+
+html,body
+  overflow hidden
+
+
+$ctx = '.si-work-steps'
+{$ctx}__item
+  text-align center
+
+{$ctx}__text
+  color #fff
+  font-weight 500
+  font-size 1.125rem
+  line-height 1.5rem
+  margin-top 32px
+
+
+.si-article-join
+  text-align center
+  border 2px dashed #dce353
+  border-radius 6px
+  margin-bottom 3.75rem
+  margin-top 1.75rem
+  padding 1.25rem 2rem
+  .sb-button
+    width 14rem
+
+    &__text
+      font-size 1rem
+  .si-link
+    &__text
+      font-size 14px
+  &__caption
+    font-size 1.125rem
+    line-height 1.75rem
+    font-weight 500
+  &__text
+    font-size .875rem
+    line-height 1.5rem
+    opacity (2/3)
+
+
+$ctx = '.si-menu-navigation'
+{$ctx}
+  padding 4px 0
+  border-right 1px solid #e5e5e5
+
+{$ctx}__item
+  position relative
+
+{$ctx}__item_active
+  &::after
+    pointer-events none
+    sprite(ic_menu_arrow)
+    content ''
+    position absolute
+    right 32px
+    top 50%
+    transform translate3d(0, -50%, 0)
+
+  {$ctx}__link
+    color #000
+    background #fafafa
+{$ctx}__link
+  margin 0 0 0 -2rem
+  padding 1.125rem 0 1.125rem 2rem
+  color #009942
+  display block
+  font-weight 500
+  transition color $transition-duration $transition-timing-function
+
+  &:hover
+    color #000
+
+
+$ctx = '.si-hero'
+{$ctx}
+  color #fff
+  position relative
+  height 560px
+  margin-top -80px
+
+{$ctx}__overlay
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  overflow hidden
+  &::after
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+    background rgba(0,0,0,.5)
+    content ''
+
+  video
+    min-width 100%
+    min-height 100%
+    position absolute
+    top 50%
+    right 0
+    left 50%
+    bottom 0
+    transform translate3d(-50%, -50%, 0)
+
+{$ctx}__text
+  font-weight 300
+  font-size 2.25rem
+  line-height 1.375
+
+{$ctx}__container
+  position absolute
+  margin-top 2.5rem
+  left 0
+  top 50%
+  right 0
+  text-align center
+  transform translate3d(0, -50%, 0)
+
+.si-menu__topbar
+  background #fafafa
+  padding 1.5rem 0
+
+$ctx = '.si-menu-good'
+{$ctx}
+  height 9.25rem
+  margin 1rem 0
+  color #fff
+  position relative
+  display block
+  background #000
+  overflow hidden
+  border-radius .375rem
+  transform translate3d(0,0,0)
+
+  &:hover
+    {$ctx}__image
+      transform scale(1.125)
+
+  &__image
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    transition transform .375s $transition-timing-function
+    // border-radius .375rem
+    background-size cover
+    background-repeat no-repeat
+    background-position 50% 50%
+
+  &::before
+    content ''
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+    background #000
+    opacity .25
+
+{$ctx}__caption
+  text-align center
+  position absolute
+  top 50%
+  left 0
+  right 0
+  line-height 1.5
+  transform translate3d(0, -50%, 0)
+  padding 0 .75rem
+  font-weight 600
+  font-size 14px
+
+
+$ctx = '.si-select,.si-select-ajax'
+{$ctx}
+  select
+  .select2
+    width 100% !important
+
+{$ctx}_theme_a
+  position relative
+  border-radius 6px
+  padding 4px 0
+  background #fff
+  font-size 14px
+  .select2-container--default
+    .select2-search--inline
+      .select2-search__field
+        margin 0
+        height 32px
+        font-family 'Fedra Sans', sans-serif
+
+
+    .select2-selection--single
+      .select2-selection__rendered
+        padding 0 44px 0 16px
+
+      .select2-selection__arrow
+        sprite(si-select-arrow)
+        position absolute
+        top 50%
+        right 16px
+        transform translate3d(0, -50%, 0)
+
+        b
+          display none
+
+    .select2-selection--single
+    .select2-selection--multiple
+      border none
+      min-height 32px
+      height initial
+
+      .select2-selection__rendered
+        vertical-align top
+        line-height 32px
+
+    .select2-selection--multiple
+      .select2-selection__choice__remove
+        sprite(si-select-tags-remove)
+        position absolute
+        right 12px
+        top 50%
+        transform translate3d(0, -50%, 0)
+        text-indent -99999px
+        opacity (1/3)
+        margin 0
+        transition opacity $transition-duration $transition-timing-function
+
+        &:hover
+          opacity 1
+
+      .select2-selection__rendered
+        padding 0 4px
+
+        .select2-selection__choice
+          position relative
+          font-weight 500
+          font-size 12px
+          color rgba(#000, (2/3))
+          line-height 2
+          border 0
+          padding 0 34px 0 12px
+          margin 4px
+          background #d3e120
+
+
+.select2-dropdown
+  border none
+  overflow hidden
+  font-size 14px
+.select2-results__option
+  padding 12px 16px
+  color rgba(0,0,0, .4)
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+.select2-container--default .select2-results__option[aria-selected=true]
+  color rgba(0,0,0, 1)
+  background-color #eeeeee
+
+.si-editor-search
+  position relative
+
+  &__action
+    border 0
+    outline 0
+    background transparent
+    margin 0
+    padding 0
+    cursor pointer
+    right 1rem
+    position absolute
+    top .8125rem
+    sprite(si-editor-search-action)
+
+
+$ctx = '.si-h'
+
+{$ctx}_type_2
+  font-size 28px
+  line-height 32px
+
+  @media screen and (max-width: 767px)
+    font-size 22px
+    line-height 30px
+
+{$ctx}_type_3
+  font-size 22px
+  line-height 28px
+
+$ctx = '.si-b-search'
+
+{$ctx}
+  opacity 0
+  position absolute
+  top 0
+  right 0
+  left 0
+  box-shadow 0 1px 0 #e8e8e8
+  background #fff
+  z-index 9
+
+{$ctx}__container
+  position relative
+  padding-right 2.5rem
+
+{$ctx}__control
+  font inherit
+  font-size 1.5rem
+  font-weight 500
+  height 5rem
+  outline 0
+  margin 0
+  padding 0
+  border 0
+  width 100%
+
+{$ctx}__close
+  position absolute
+  top 50%
+  right 0
+  transform translate3d(0, -50%, 0)
+  transition color $transition-duration $transition-timing-function
+
+  &:hover
+    color #009942
+
+.si-isotope
+  &__container
+    margin 0 -16px -32px
+    min-height 1px
+
+    +screen-sm()
+      margin 0 -12px -24px
+
+    +screen-xs()
+      margin 0 -10px -20px
+
+  &__item
+    padding 0 16px
+    margin-bottom 32px
+
+    &_s_s
+      width (1/3)*100%
+
+    &_s_m
+      width (2/3)*100%
+
+    +screen-sm()
+      padding-right 12px
+      padding-left 12px
+      margin-bottom 24px
+
+      &_s_s
+        width 50%
+
+      &_s_m
+        width 100%
+
+    +screen-xs()
+      padding-right 10px
+      padding-left 10px
+      margin-bottom 20px
+
+      &_s_s
+      &_s_m
+        width 100%
+
+
+.si-search__text
+    font-size 14px
+    color #bababa
+
+    span
+      color #3a3a3a
+
+.si-search-results
+  border-top 1px solid #edf0f1
+  &__item
+    display block
+    padding 1.5rem 0
+    border-bottom 1px solid #edf0f1
+
+  &__name
+    font-size 1.125rem
+    font-weight 500
+    color #009942
+    margin-bottom .75rem
+
+  &__text
+    font-size .9375rem
+    line-height 1.5rem
+
+
+$ctx = '.si-input'
+{$ctx}
+  font-family inherit
+  outline 0
+  width 100%
+  margin 0
+
+  &_type_textarea
+    resize none
+    padding-top .625rem
+    padding-bottom .625rem
+
+{$ctx}_theme_a
+  font-weight 500
+  border 2px solid #bababa
+  &{$ctx}_s_m
+    font-size 1.125rem
+    padding-right 1rem
+    padding-left 1rem
+    height 44px
+
+{$ctx}_theme_b
+  height 2.75rem
+  padding-right 1rem
+  padding-left 1rem
+  font-size .875rem
+  border 2px solid #f2f2f2
+
+  &{$ctx}_type_textarea
+    height auto
+
+
+$ctx = '.si-pagination'
+{$ctx}
+  &::after
+  &::before
+    display table
+    content ''
+
+  &::after
+    clear both
+
+{$ctx}_theme_a
+  {$ctx}__item
+    float left
+
+  {$ctx}__link
+    display block
+    position relative
+    width 36px
+    height 36px
+    line-height 36px
+    text-align center
+
+    &_active
+      background #f2f2f2
+
+  {$ctx}__next
+    position absolute
+    left 50%
+    top 50%
+    margin-top -(si-pagination__arrow-height/2)
+    margin-left -(si-pagination__arrow-width/2)
+    sprite(si-pagination__arrow)
+
+
+$ctx = '.si-radio'
+{$ctx}
+  position relative
+  display block
+  cursor pointer
+
+{$ctx}__control
+  display none
+
+{$ctx}_theme_a
+
+  &::after
+  &::before
+    position absolute
+    top 0
+    sprite-image()
+    sprite-size()
+    sprite-width(si-radio_theme_a)
+    sprite-height(si-radio_theme_a)
+    z-index 1
+    content ''
+
+  &::after
+    sprite-position(si-radio_theme_a)
+    left 50%
+
+  &::before
+    sprite-position(si-radio_theme_a_checked)
+    left 0
+
+  {$ctx}__box
+    display inline-block
+    vertical-align middle
+    width 3.25rem
+    height 1.625rem
+    position relative
+    border-radius .8125rem
+    transition-timing-function $transition-timing-function
+    transition-duration $transition-duration
+    transition-property all
+    background #8f8f8f
+
+    &::before
+      width 20px
+      height 20px
+      position absolute
+      left 0
+      background #fff
+      border-radius 50%
+      top 50%
+      transform translate3d(3px, -50%, 0)
+      transition-timing-function $transition-timing-function
+      transition-duration $transition-duration
+      transition-property transform
+      content ''
+
+  {$ctx}__control:checked + {$ctx}__box
+    background #009942
+
+    &::before
+      transform translate3d(29px, -50% ,0)
+
+
+$ctx = '.si-footer-social'
+
+{$ctx}
+  padding-right 3.75rem
+
+  &::after
+  &::before
+    display table
+    content ''
+
+  &::after
+    clear both
+
+{$ctx}__item
+  float right
+  margin-left .75rem
+
+{$ctx}__link
+  sprite-image()
+  sprite-size()
+  display block
+  width 1.5rem
+  height 1.5rem
+  opacity (2/3)
+  transition opacity $transition-duration $transition-timing-function
+
+  &:hover
+    opacity 1
+
+  &_youtube
+    sprite-position(footer-youtube)
+
+  &_odnoklassniki
+    sprite-position(footer-odnoklassniki)
+
+  &_twitter
+    sprite-position(footer-twitter)
+
+  &_instagram
+    sprite-position(footer-instagram)
+
+  &_facebook
+    sprite-position(footer-facebook)
+
+  &_vk
+    sprite-position(footer-vk)
+
+
+$ctx = '.si-editorcard'
+
+{$ctx}
+  display block
+  position relative
+  overflow hidden
+  border-radius .375rem
+  color #fff
+
+  &:hover
+    {$ctx}__name
+      transform translate3d(0, -148px, 0)
+
+    {$ctx}__quote
+      transform translate3d(0, 0, 0)
+
+    {$ctx}__type
+      transform scale(0)
+
+    {$ctx}__overlay
+      opacity .875
+
+
+{$ctx}__image
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% 50%
+  background-color rgba(#000, .5)
+  background-blend-mode overlay
+  height 16.5rem
+
+{$ctx}__content
+  position absolute
+  left 0
+  top 0
+  right 0
+  bottom 0
+  z-index 9
+
+{$ctx}__overlay
+  position absolute
+  left 0
+  top 0
+  right 0
+  bottom 0
+  opacity 0
+  background #42984a
+  border-radius 6px
+  transition all .3s $transition-timing-function
+
+{$ctx}__name
+  position absolute
+  left 1.875rem
+  right 1.875rem
+  bottom 1.875rem
+  font-size 1.3125rem
+  font-weight 600
+  line-height 1.75rem
+  transform translate3d(0,0,0)
+  transition all .3s $transition-timing-function
+
+{$ctx}__type
+  position absolute
+  left 30px
+  top 30px
+  transition all .25s $transition-timing-function
+  transform scale(1)
+
+{$ctx}__quote
+  font-size 18px
+  line-height 24px
+  font-weight 600
+  font-style italic
+  position absolute
+  left 0
+  right 0
+  padding 30px
+  bottom 0
+  transition all .4s $transition-timing-function
+  transform translate3d(0, 100%, 0)
+
+  &::before
+  &::after
+    sprite-image()
+    sprite-size()
+    display inline-block
+    vertical-align 4px
+    content ''
+
+  &::before
+    margin-right 4px
+    sprite-position(si-quote_o)
+    sprite-width(si-quote_o)
+    sprite-height(si-quote_o)
+
+  &::after
+    margin-left 4px
+    sprite-position(si-quote_c)
+    sprite-width(si-quote_c)
+    sprite-height(si-quote_c)
+
+
+.si-request
+  width 53.75rem
+  margin 0 auto
+
+  &__close
+    display block
+    position relative
+    font-size 1.375rem
+    line-height 2rem
+    margin-bottom 32px
+
+    &::before
+      position absolute
+      left -3.75rem
+      top 50%
+      transform translate3d(0,-50%,0)
+      content ''
+      sprite(si-request_prev)
+
+
+.small-text
+  font-size .8125rem
+  line-height 1.125rem
+  margin-top .375rem
+  opacity (1/3)
+
+
+.si-layout_theme_a
+  .si-header
+    background transparent
+    box-shadow 0 1px 0 rgba(#fff, .3)
+
+
+.ngdialog-theme-default
+  .ngdialog-content
+    width 738px
+    background #fff
+
+  .ngdialog-close
+    cursor pointer
+    position absolute
+    right -60px
+    top 10px
+    margin-left 40px
+    sprite(dialog-close)
+
+.si-feedbak
+  &__section
+    padding 0 4.25rem
+    overflow hidden
+
+  &__section_one
+    background #f3f3f3
+
+  .si-form
+    &__field
+      display table
+      table-layout fixed
+      width 100%
+
+    &__label
+    &__control
+      display table-cell
+
+    &__label
+      font-size 14px
+  .si-form__label
+    line-height 44px
+    font-weight 500
+
+
+.si-header
+
+  &__toggle
+    margin-right 50px
+
+    @media screen and (max-width: 767px)
+      margin-right 30px
+
+
+.si-navigation
+  display flex
+  margin-left auto
+  align-items center
+
+  &__item
+    padding-left 10px
+    padding-right 10px
+
+  &__list
+    &_left
+      margin-left -10px
+      margin-right 70px
+      @media screen and (max-width: 1199px)
+        display none
+
+    &_right
+      margin-left auto
+      margin-right -10px
+
+      @media screen and (max-width: 479px)
+        display none
+
+  &__item
+    float left
+
+
+.si-spacer
+  &_s_m
+    margin-top 32px
+    margin-bottom 32px
+
+    +screen-sm()
+      margin-top 24px
+      margin-bottom 24px
+
+    +screen-xs()
+      margin-top 20px
+      margin-bottom 20px
+
+.si-tag-buttons-group
+  @extend $clearfix
+  margin -5px
+
+  &__item
+    float left
+    padding 5px
+
+
+.si-visible-xs
+  display none
+
+  @media screen and (max-width: 767px)
+    display block
+
+.si-hidden-xs
+  @media screen and (max-width: 767px)
+    display none
+
+.si-hidden-sm
+  @media screen and (max-width: 1199px)
+    display none
+
+.si-footer
+    @media screen and (max-width: 1199px)
+      padding-top 0
+      &__link
+        font-size 1.0625rem
+
+.si-footer-topline
+  @extend $clearfix
+  display none
+  background #414141
+
+  .si-link
+    &__icon
+      color #fff
+
+      @media screen and (max-width: 767px)
+        float right
+
+    &__text
+      line-height 24px
+
+  @media screen and (max-width: 1199px)
+    display block
+
+  &__item
+    float left
+    width (1/3)*100%
+
+    @media screen and (max-width: 767px)
+      width 100%
+      box-shadow 0 1px 0 #3a3a3a
+
+  &__link
+    display block
+    padding 28px 24px
+    color #e2ff00
+    font-size .875rem
+    text-transform uppercase
+    font-weight 600
+
+    @media screen and (max-width: 767px)
+      padding-left 20px
+      padding-right 20px
+
+
+.si-editor-person
+    @media screen and (max-width: 767px)
+      margin-bottom 0
+
+    @media screen and (min-width: 768px) and (max-width: 1199px)
+      margin-bottom 24px
+
+
+.si-editor-filter
+  &__left
+    width calc(100% - 210px)
+  &__right
+    width 210px
+
+  @media screen and (max-width: 767px)
+    &__left
+      margin-bottom 20px
+
+    &__left
+    &__right
+      width 100%
+
+.si-search-results
+  &__item
+    em
+      font-weight 600
+      font-style normal

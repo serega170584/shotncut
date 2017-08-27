@@ -1,0 +1,5 @@
+module.exports = function () {
+  return function (date, format) {
+    return moment(date).format(format)
+  }
+}

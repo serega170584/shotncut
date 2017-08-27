@@ -1,0 +1,44 @@
+$ctx = '.sb-good-radio'
+{$ctx}
+  position relative
+  display block
+  line-height 28px
+  cursor pointer
+
+  input
+    display none
+
+{$ctx}__box
+  display inline-block
+  margin-right 12px
+  width 18px
+  height 18px
+  border 2px solid #d5d5d5
+  border-radius 50%
+  vertical-align middle
+  transition-timing-function $transition-timing-function
+  transition-duration $transition-duration
+  transition-property all
+
+  img
+    margin-top -2px
+    margin-left -2px
+
+{$ctx}__text
+  vertical-align middle
+  font-weight 500
+  font-size 21px
+
+{$ctx} input:checked
+  + {$ctx}__box
+    border-color #009942
+
+
+{$ctx}_theme_type
+  {$ctx}__box
+    margin-top 0
+    margin-right 24px
+    width 80px
+    height 80px
+  {$ctx}__text
+    line-height 80px

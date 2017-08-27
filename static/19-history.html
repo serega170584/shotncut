@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сбербанк страхование</title>
+
+    <link rel="stylesheet" href="css/jquery.datepick.css" media="all">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" media="all">
+    <link rel="stylesheet" href="css/common.css" media="all">
+
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/jquery.plugin.js"></script>
+    <script src="js/libs/jquery.datepick.js"></script>
+    <script src="js/libs/jquery.datepick-ru.js"></script>
+    <script src="js/libs/slick.js"></script>
+    <script src="js/libs/jquery.mCustomScrollbar.js"></script>
+    <script src="js/libs/phone-mask.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/pages/about.js"></script>
+
+</head>
+<body>
+
+<header class="js-header b-header">
+    <div class="js-header-wrapper b-header__wrapper b-wrapper">
+
+        <div class="u-clear-fix b-header__top">
+            <a href="#" class="b-header__logo"></a>
+            <div class="b-header__login_box">
+                <a href="#" class="b-header__login">
+                    <span class="b-header__login_text">Войти</span>
+                    <span class="b-header__login_icon"></span>
+                </a>
+            </div>
+            <ul class="u-clear-fix b-top-menu">
+                <li>
+                    <a href="#" class="js-feedback-call">Обратная связь</a>
+                </li>
+                <li>
+                    <a href="#">Страховой случай</a>
+                </li>
+                <li>
+                    <a href="#">Активировать полис</a>
+                </li>
+            </ul>
+            <div class="b-header__search">
+                <a href="#" class="b-header__search_i"></a>
+            </div>
+
+            <div class="js-header-line b-header__line"></div>
+        </div>
+
+        <div class="u-clear-fix b-header__bottom">
+            <ul class="u-clear-fix b-bottom-menu">
+                <li>
+                    <a href="#" class="active">Путешествия</a>
+                </li>
+                <li>
+                    <a href="#">Здоровье и жизнь</a>
+                </li>
+                <li>
+                    <a href="#">Семья</a>
+                </li>
+                <li>
+                    <a href="#">Недвижемость</a>
+                </li>
+                <li>
+                    <a href="#">Финансы</a>
+                </li>
+                <li>
+                    <a href="#">Для бизнеса</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="js-header-main b-header-main">
+        <div class="b-header-main__wrapper">
+            <div class="u-clear-fix b-wrapper">
+                <div class="b-header-main__l">
+                    <a href="#menu-main" class="js-header-tab-link b-header-main__link b-header-main__link_first active">
+                        Сбербанк Страхование
+                    </a>
+                    <ul class="b-header-main__nav">
+                        <li>
+                            <a href="#" class="b-header-main__link b-header-main__link_travel">
+                                <span class="b-link"><span class="b-link__text">Путешествия</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu-health" class="js-header-tab-link b-header-main__link b-header-main__link_health">
+                                Здоровье и жизнь
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu-family" class="js-header-tab-link b-header-main__link b-header-main__link_family">
+                                Семья
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu-build" class="js-header-tab-link b-header-main__link b-header-main__link_build">
+                                Недвижимость
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu-finance" class="js-header-tab-link b-header-main__link b-header-main__link_finance">
+                                Финансы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu-business" class="js-header-tab-link b-header-main__link b-header-main__link_business">
+                                Для бизнеса
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="b-header-main__l_tel">
+                        <div class="b-header-main__tel">
+                            <span>ООО СК «Сбербанк Страхование жизни»</span>
+                            <a href="tel:88005555595">8 800 555 55 95</a>
+                        </div>
+                        <div class="b-header-main__tel">
+                            <span>ООО СК «Сбербанк Страхование»</span>
+                            <a href="tel:88005555557">8 800 555 55 57</a>
+                        </div>
+                    </div>
+                    <a href="#" class="b-header-main__link b-header-main__link_last">
+                        Сотрудникам Сбербанка
+                    </a>
+                    <a href="#" class="b-header-main__link b-header-main__link_last">
+                        Партнерские продукты
+                    </a>
+                </div>
+                <div class="b-header-main__r">
+                    <div id="menu-main" class="js-header-tab b-header-main__tab b-header-main__tab_main active">
+                        <div class="b-header-main__tel">
+                            <span>ООО СК «Сбербанк Страхование жизни»</span>
+                            <a href="tel:88005555595">8 800 555 55 95</a>
+                        </div>
+                        <div class="b-header-main__tel">
+                            <span>ООО СК «Сбербанк Страхование»</span>
+                            <a href="tel:88005555557">8 800 555 55 57</a>
+                        </div>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">О нас</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Закупки</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Команда</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Финансовые показатели</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Вакансии</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Страховая документация</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Реестр агентов</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Действия по полису</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Раскрытие информации</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Новости</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="b-link"><span class="b-link__text">Контакты</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu-health" class="js-header-tab b-header-main__tab">
+                        <h6>Онлайн-оформление</h6>
+                        <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Глава семьи</span></span>
+                                    <div data-pic="i/__tmp/header-hover-pic-1.png" class="js-header-product-get-text hidden">
+                                        Защита семьи на случай непредвиденных обстоятельств со здоровьем главы семьи
+                                        <span class="b-price">от 1 240 <span class="b-rub">c</span></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита близких</span></span>
+                                    <div data-pic="i/__tmp/header-hover-pic-2.png" class="js-header-product-get-text hidden">
+                                        Страхование самых близких людей на случай переломов, ожогов, тяжелых ран, обморожений
+                                        <span class="b-price">от 1 040 <span class="b-rub">c</span></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита от Клеща</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6>Оформление в офисе</h6>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Сберегательное страхование</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Подушка безопасности</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Международное медицинское страхование</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Второе экспертное медицинское мнение</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Ремень безопасности</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu-family" class="js-header-tab b-header-main__tab">
+                        <h6>Онлайн-оформление</h6>
+                        <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Глава семьи</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита близких</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита близких плюс</span></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6>Оформление в офисе</h6>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Детский образовательный план</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Первый капитал</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Семейный актив</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu-build" class="js-header-tab b-header-main__tab">
+                        <h6>Онлайн-оформление</h6>
+                        <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита дома</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Продление страхования ипотеки</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защищённый заёмщик</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Мультиполис онлайн</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <h6>Оформление в офисе</h6>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Страхование жизни заемщиков кредитов Сбербанка</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Без забот</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu-finance" class="js-header-tab b-header-main__tab">
+                        <h6>Онлайн-оформление</h6>
+                        <ul class="u-clear-fix b-header-main__list b-header-main__list_online">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Защита карт</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Мультиполис</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <h6>Оформление в офисе</h6>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">СмартПолис</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Рантье</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Наследие</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Страхование жизни заемщиков кредитов Сбербанка</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Без забот</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu-business" class="js-header-tab b-header-main__tab">
+                        <h6>Оформление в офисе</h6>
+                        <ul class="u-clear-fix b-header-main__list">
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Стабильный бизнес</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Страхование гражданской ответственности</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="js-header-product-link">
+                                    <span class="b-link"><span class="b-link__text">Страхование движимого имущества</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="js-header-circle b-header-main__circle">
+                    <div class="b-header-main__circle__text b-header-main__circle__text-main">
+                        Наведите курсор на&nbsp;продукт, чтобы увидеть здесь краткую информацию
+                    </div>
+                    <div class="b-header-main__circle_insert">
+                        <div class="js-header-circle-insert-pic b-header-main__circle_insert-pic"></div>
+                        <div class="js-header-circle-insert-text b-header-main__circle__text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<a href="#" class="js-toggle-menu b-menu-toggle">
+    <span class="b-menu-toggle__line b-menu-toggle__line_1"></span>
+    <span class="b-menu-toggle__line b-menu-toggle__line_2"></span>
+    <span class="b-menu-toggle__line b-menu-toggle__line_3"></span>
+</a>
+
+<div class="b-content">
+
+    <section class="b-top__section b-top__section_about">
+        <div class="b-wrapper">
+            <h1>О компании</h1>
+
+            <div class="js-tabs-container b-main-tabs__section">
+                <ul class="u-clear-fix b-main-tabs__tabs">
+                    <li>
+                        <a href="#tab1" class="js-tabs b-main-tabs__tabs_link active">СК «Сбербанк страхование»</a>
+                    </li>
+                    <li>
+                        <a href="#tab2" class="js-tabs b-main-tabs__tabs_link">СК «Сбербанк страхование жизни»</a>
+                    </li>
+                </ul>
+
+                <div class="js-about-menu-fix b-main-tabs__result_box">
+                    <div id="tab1" class="js-tabs-result b-main-tabs__result active">
+
+                        <div class="u-clear-fix b-about-section">
+                            <div class="js-about-menu-column b-about-section_l">
+                                <div class="b-about-section__menu_wrapper">
+                                    <ul class="js-about-menu b-about-section__menu">
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link about">
+                                                О нас
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link history active">
+                                                История
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link team">
+                                                Команда
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link info">
+                                                Раскрытие информации
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link procurement">
+                                                Закупки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link agents">
+                                                Реестр страховых агентов
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link careers">
+                                                Вакансии
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link contacts">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="b-about-section_r">
+                                <h3>
+                                    История
+                                </h3>
+                                <ul class="u-clear-fix b-history__box">
+                                    <li class="b-history">
+                                        <span class="b-history__date">12 ноября 1999 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product-2.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">1 ноября 2002 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">12 ноября 1999 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product-2.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">1 ноября 2002 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="b-button__box">
+                                    <a href="#" class="b-button">Показать всю историю</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="tab2" class="js-tabs-result b-main-tabs__result">
+
+                        <div class="u-clear-fix b-about-section">
+                            <div class="js-about-menu-column b-about-section_l">
+                                <div class="b-about-section__menu_wrapper">
+                                    <ul class="js-about-menu b-about-section__menu">
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link about">
+                                                О нас
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link history active">
+                                                История
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link team">
+                                                Команда
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link info">
+                                                Раскрытие информации
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link procurement">
+                                                Закупки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link agents">
+                                                Реестр страховых агентов
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link careers">
+                                                Вакансии
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="b-about-section__menu_link contacts">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="b-about-section_r">
+                                <h3>
+                                    История
+                                </h3>
+
+                                <ul class="u-clear-fix b-history__box">
+                                    <li class="b-history">
+                                        <span class="b-history__date">12 ноября 1999 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product-2.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">1 ноября 2002 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">12 ноября 1999 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product-2.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="b-history">
+                                        <span class="b-history__date">1 ноября 2002 год</span>
+                                        <div class="b-history__pic"><span style="background-image: url(i/__tmp/bg-product.jpg)"></span></div>
+                                        <div class="b-history__text">
+                                            <h4>Учреждение сберегательной кассы</h4>
+                                            <p>
+                                                В 1841 году император России Николай I своим указом повелел учредить сберегательные кассы при Московской и Петербургской сохранных казнах — именно этот год и ознаменовал возникновение старейшего банка России — Сбербанка.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="b-button__box">
+                                    <a href="#" class="b-button">Показать всю историю</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<footer class="b-footer">
+    <div class="b-wrapper">
+
+        <div class="u-clear-fix b-information__section">
+            <div class="b-information__tel">
+                <span>ООО СК «Сбербанк Страхование жизни»</span>
+                <h2><a href="tel:88005555595">8 800 555 55 95</a></h2>
+            </div>
+            <div class="b-information__tel">
+                <span>ООО СК «Сбербанк Страхование»</span>
+                <h2><a href="tel:88005555557">8 800 555 55 57</a></h2>
+            </div>
+            <ul class="u-clear-fix b-social__list">
+                <li class="b-social__item">
+                    <a href="#" class="b-social b-social_fb"></a>
+                </li>
+                <li class="b-social__item">
+                    <a href="#" class="b-social b-social_tw"></a>
+                </li>
+                <li class="b-social__item">
+                    <a href="#" class="b-social b-social_vk"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="u-clear-fix b-footer__columns_box">
+            <div class="b-footer__columns">
+                <ul>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансии</a>
+                    </li>
+                    <li>
+                        <a href="#">Реестр агентов</a>
+                    </li>
+                    <li>
+                        <a href="#">Раскрытие информации</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="b-footer__columns">
+                <ul>
+                    <li>
+                        <a href="#">Закупки</a>
+                    </li>
+                    <li>
+                        <a href="#">Финансовые показатели</a>
+                    </li>
+                    <li>
+                        <a href="#">Страховая документация</a>
+                    </li>
+                    <li>
+                        <a href="#">Действия по полису</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="b-footer__columns">
+                <span class="b-footer__title">Сотрудникам Сбербанка</span>
+                <ul>
+                    <li>
+                        <a href="#">Защита от клеща</a>
+                    </li>
+                    <li>
+                        <a href="#">Маяк</a>
+                    </li>
+                    <li>
+                        <a href="#">Верный выбор</a>
+                    </li>
+                </ul>
+                <span class="b-footer__title">Партнерские продукты</span>
+                <ul>
+                    <li>
+                        <a href="#">Онкологическое страхование</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="b-licence">
+                <li>
+                    <span class="b-licence__title">ООО СК  «Сбербанк страхование»</span>
+                    <p>Лицензия Банка России СИ №4331 и СЛ №4331 выданы 05.08.2015 бессрочно</p>
+                </li>
+                <li>
+                    <span class="b-licence__title">ООО СК  «Сбербанк страхование жизни»</span>
+                    <p>Лицензия на осуществление страхования СЖ № 3692, Лицензия на осуществление страхования СЛ № 3692</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="u-clear-fix b-footer__bottom">
+            <div class="b-footer__bottom_copy">
+                © 2017 Сбербанк cтрахование
+            </div>
+            <div class="b-footer__bottom_made">
+                <span>Сайт сделан</span> <a target="_blank" href="http://artutkin.ru/">в Артели Уткина</a> <span>в&nbsp;2017 году</span>
+                <span class="b-footer__bottom_made-BA">при поддержке <a href="http://pba.su/">БизнесАвтоматики</a></span>
+            </div>
+            <div class="b-footer__bottom_middle">
+                Дата обновления сведений на странице: 22 ноября, 2016 в 13:41
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div class="js-feedback-overlay b-popup__overlay b-popup__overlay_feedback">
+    <a href="#" class="js-popup-close b-popup__close"></a>
+    <div class="js-feedback-popup b-popup b-popup__feedback">
+        <h2>Обратная связь</h2>
+        <form action="" class="js-feedback-form b-feedback-form">
+            <div class="b-feedback-form__faq">
+                Каждое обращение будет рассмотрено руководством компании и мы обязательно ответим Вам в течение 2-х дней
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_name" class="b-label">ФИО</label>
+                <input id="feedback_name" name="feedback[name]" class="js-required b-input" type="text">
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_phone" class="b-label">Мой телефон</label>
+                <input id="feedback_phone" name="feedback[phone]" class="js-required b-input phone" type="tel">
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_email" class="b-label">Моя электронная почта</label>
+                <input id="feedback_email" name="feedback[email]" class="js-required b-input email" type="email">
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_title" class="b-label">Тема обращения</label>
+                <input id="feedback_title" name="feedback[title]" class="js-required b-input" type="text">
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_message" class="b-label">Мое сообщение</label>
+                <textarea id="feedback_message" name="feedback[message]" class="js-required b-input"></textarea>
+            </div>
+            <div class="b-input__box">
+                <label for="feedback_time" class="b-label">Во сколько вам удобно позвонить</label>
+                <input id="feedback_time" name="feedback[time]" class="b-input" type="text">
+            </div>
+            <div class="b-button__box">
+                <button type="submit" class="b-button" disabled="disabled">Отправить</button>
+            </div>
+        </form>
+        <p class="js-feedback-form-error b-order-form__error hidden">
+            Возникла ошибка.<br>Повторите попытку позже.
+        </p>
+        <p class="js-feedback-form-success b-order-form__success hidden">
+            Спасибо!<br>В ближайшее время мы свяжемся с вами.
+        </p>
+    </div>
+</div>
+
+
+
+</body>
+</html>

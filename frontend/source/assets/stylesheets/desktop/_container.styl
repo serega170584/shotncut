@@ -1,0 +1,138 @@
+$ctx = '.container'
+
+.container
+.si-container
+  @extend $clearfix
+  margin-right auto
+  margin-left auto
+  max-width 1200px
+  padding-left 32px
+  padding-right 32px
+
+  +screen-sm()
+    padding-right 24px
+    padding-left 24px
+
+  +screen-xs()
+    padding-right 20px
+    padding-left 20px
+
+
+
+$ctx = '.r'
+
+{$ctx}
+  display flex
+  flex-wrap wrap
+
+  &_j_s
+    justify-content space-between
+
+  &_j_c
+    justify-content center
+
+  &_a_b
+    align-items baseline
+
+  &_a_c
+    align-items center
+
+{$ctx}__c
+  min-height 1px
+
+  &_g_1
+    flex-grow 1
+
+  &_md_2
+    width (2/12)*100%
+
+  &_md_3
+    width (3/12)*100%
+
+  &_md_4
+    @media screen and (max-width: 1199px)
+      width 100%
+    @media screen and (min-width: 1200px)
+      width (4/12)*100%
+
+  &_md_6
+    width (6/12)*100%
+
+  &_md_8
+    @media screen and (max-width: 1199px)
+      width 100%
+    @media screen and (min-width: 1200px)
+      width (8/12)*100%
+
+
+  &_md_9
+    width (9/12)*100%
+  &_md_10
+    width (10/12)*100%
+  &_1_2
+    width 50%
+
+  &_1_3
+    width (1 / 3) * 100%
+
+  &_1_4
+    width 25%
+
+  &_2_3
+    width (2 / 3) * 100%
+
+  &_r
+    margin-left auto
+
+{$ctx}_s_s
+  margin-right -12px
+  margin-left -12px
+
+  > {$ctx}__c
+    padding-right 12px
+    padding-left 12px
+
+{$ctx}_s_m
+  @media screen and (max-width: 767px)
+    margin-right -10px
+    margin-left -10px
+
+    > {$ctx}__c
+      padding-right 10px
+      padding-left 10px
+
+  @media screen and (min-width: 768px) and (max-width: 1199px)
+    margin-right -12px
+    margin-left -12px
+
+    > {$ctx}__c
+      padding-right 12px
+      padding-left 12px
+
+  @media screen and (min-width: 1200px)
+    margin-right -16px
+    margin-left -16px
+
+    > {$ctx}__c
+      padding-right 16px
+      padding-left 16px
+
+
+
+.si-layout-section_s_xs
+  margin .75rem 0
+.si-layout-section_s_s
+  margin 1.5rem 0
+.si-layout-section_s_m
+  margin 2.25rem 0
+.si-layout-section_s_l
+  margin 3rem 0
+.si-layout-section_a_c
+  text-align center
+
+.sb-layout-section
+  &_s_m
+    margin 24px 0
+
+  &_s_l
+    margin 48px 0

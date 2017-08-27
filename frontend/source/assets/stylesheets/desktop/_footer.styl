@@ -1,0 +1,127 @@
+
+$ctx-link
+  display block
+  color #d6e03e
+  line-height 1.875rem
+
+$ctx = '.si-footer'
+{$ctx}
+  padding-top 60px
+  background #3d3d3d
+  color #fff
+
+.si-footer__link
+  font-size .9375rem
+  font-family 'Circe', sans-serif
+  @extends $ctx-link
+
+{$ctx}-services
+  &__instance
+    margin-bottom 30px
+
+  .sb-icon
+    opacity (3/4)
+
+  .si-link
+    font-weight 500
+    font-family 'Fedra Sans', sans-serif
+    text-transform uppercase
+
+$ctx = '.si-footer-caption'
+{$ctx}
+  margin-bottom 30px
+  line-height 30px
+
+{$ctx}__text
+  opacity (1/3)
+  text-transform uppercase
+
+{$ctx}::after
+  display block
+  margin-top 13px
+  width 1.75rem
+  height .125rem
+  background #fff
+  content ''
+
+.si-footer-contacts
+  margin-top 15px
+
+.si-footer-contacts__link
+  display block
+  font-size 1.1875rem
+  line-height 1.875rem
+
+.si-footer-feedback
+  margin-top 15px
+
+.si-footer-feedback__button
+  color #d6e03e
+  padding 0 1.25rem
+  font-weight 700
+  font-size .6875rem
+  line-height 1.875rem
+  text-transform uppercase
+  border-radius 4px
+
+  &::before
+    border-radius 4px
+    background rgba(#fff, .075)
+
+  &:hover::before
+    background rgba(#fff, .15)
+
+.si-footer__service-link
+  margin-bottom 30px
+  position relative
+  font-weight 500
+  padding-left 32px
+  @extend $ctx-link
+
+  &:hover::before
+    opacity 1
+
+  &::before
+    width 24px
+    height 24px
+    position absolute
+    left 0
+    top 50%
+    margin-top -12px
+    content ''
+    opacity (2/3)
+    sprite-image()
+    sprite-size()
+    transition-timing-function $transition-timing-function
+    transition-duration $transition-duration
+    transition-property transform
+
+  &_signin::before
+    sprite-position(ic_signin_white_24px)
+
+  &_accident::before
+    sprite-position(ic_accident_white_24px)
+
+  &_activate::before
+    sprite-position(ic_power_white_24px)
+
+.si-footer__section_bottom
+  padding 30px 0
+  margin-top 30px
+  border-top 2px solid #fff
+  font-size 14px
+  font-family 'Circe', sans-serif
+
+.si-footer__license
+  text-align center
+  opacity (1/3)
+
+
+.si-footer__aic
+  sprite(ic_aic)
+  display inline-block
+  vertical-align bottom
+
+  opacity (2/3)
+  &:hover
+    opacity 1

@@ -1,0 +1,64 @@
+$ctx = '.si-header'
+
+{$ctx}
+  position relative
+  z-index 9
+  padding 1.75rem 0
+  transform translate3d(0,0,0)
+
+  .si-link
+    transition-property color
+    &__text
+      font-weight 500
+      font-size 14px
+
+
+
+.si-logo
+  sprite-image()
+  sprite-size()
+  sprite-width(logo)
+  sprite-height(logo)
+  display block
+
+.si-layout_theme_a
+  .si-header
+    background transparent
+    box-shadow none
+    color #fff
+
+    .si-link
+      opacity 1
+
+  .si-logo
+    sprite-position(logo_white)
+
+.si-layout_theme_b
+.si-layout_theme_a.si-layout_scrolled
+  .si-header
+    .si-link:hover
+      color #323232
+
+    color #b2b2b2
+    background #fff
+    box-shadow 0 1px 3px rgba(0,0,0,.125)
+
+  .si-logo
+    sprite-position(logo)
+
+.si-layout__container
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  overflow-x hidden
+  overflow-y scroll
+
+
+.si-layout__header
+    position absolute
+    top 0
+    right 0
+    left 0
+    z-index 999999

@@ -1,0 +1,32 @@
+$ctx = '.si-good-caption'
+
+{$ctx}
+  margin-bottom 1.75rem
+
+{$ctx}__text
+  font-weight 700
+  font-size 1.875rem
+  line-height 2.5rem
+  text-transform uppercase
+
+
+{$ctx}_accentuated
+  position relative
+
+  {$ctx}__text
+    position relative
+    z-index 1
+    display inline-block
+    padding-right 1.75rem
+    background #fff
+    vertical-align top
+
+  &::before
+    position absolute
+    top 1.25rem
+    right 0
+    left 0
+    margin-top -.0625rem
+    height .0625rem
+    background #e5e5e5
+    content ''

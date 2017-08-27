@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="21px" viewBox="0 0 25 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="about-black" transform="translate(-1.000000, -3.000000)" stroke="#000000">
+            <g id="Group-2" transform="translate(1.000000, 3.000000)">
+                <g id="Group">
+                    <path d="M0.5,1.99456145 L0.5,19.0054385 C0.5,19.8250858 1.17284388,20.5 1.99488033,20.5 L14.003962,20.5 C14.8290264,20.5 15.5,19.829996 15.5,19.0054385 L15.5,1.99456145 C15.5,1.17486838 14.8274784,0.5 14.0059397,0.5 L1.99406028,0.5 C1.17001489,0.5 0.5,1.169779 0.5,1.99456145 Z" id="Rectangle-3"></path>
+                    <path d="M18.5,6.5 L18.5,20.5 L22.9940809,20.5 C23.8336623,20.5 24.5,19.8356879 24.5,19.0081158 L24.5,7.99188419 C24.5,7.16971333 23.8259419,6.5 22.9940809,6.5 L20.0059191,6.5 C18.8327851,6.5 18.540367,6.5 18.2799182,6.5 L18.5,6.5 Z" id="Rectangle-3-Copy"></path>
+                </g>
+                <path d="M5,6 L6.85180664,6" id="Path-9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5,9 L6.85180664,9" id="Path-9-Copy-2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5,15 L6.85180664,15" id="Path-9-Copy-6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9,6 L10.8518066,6" id="Path-9-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19,12 L20.8518066,12" id="Path-9-Copy-9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19,15 L20.8518066,15" id="Path-9-Copy-10" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9,9 L10.8518066,9" id="Path-9-Copy-3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9,15 L10.8518066,15" id="Path-9-Copy-7" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5,12 L6.85180664,12" id="Path-9-Copy-5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9,12 L10.8518066,12" id="Path-9-Copy-4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
