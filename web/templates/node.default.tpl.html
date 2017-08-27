@@ -1,0 +1,20 @@
+<a href="#" data-id="{{node.id}}" data-type="{{node.type.code}}"
+   class="si-multipurpose-card si-news-card js__ajax_view">
+    <div class="si-news-card__img">
+        <div class="si-news-card__img_bg" ng-style="{'background-image':'url('+ node.imageUrl +')'}"></div>
+        <div class="si-news-card__img_inn">
+            <div class="si-news-card__caption" ng-bind="node.title"></div>
+        </div>
+    </div>
+    <div class="si-news-card__text">
+        <div class="si-news-card__text_inn" ng-bind-html="node.preview_text"></div>
+        <div class="i-news-card__comp" ng-bind-html="node.comp"></div>
+        <div class="i-news-card__dat" ng-bind-html="node.created_at"></div>
+    </div>
+
+    <div class="si-news-card__text__list">
+        <div class="list_news__dat" ng-bind-html="node.created_at"></div>
+        <div class="list_news__comp" ng-bind-html="node.comp"></div>
+        <div class="list_news__title"><span ng-bind-html="node.title"></span></div>
+    </div>
+</a>

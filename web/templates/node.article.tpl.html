@@ -1,0 +1,37 @@
+<a href="{{node.url}}" target="_blank" class="{{node.border_outer}} .si-multipurpose-card si-news-card special-filter">
+    <div ng-style="{'background-image': 'url('+node.imageUrl+')'}" class="special-filter__img"></div>
+    <div class="special-filter__content">
+        <div class="special-filter__header {{node.title_c}}" ng-bind-html="node.title"></div>
+        <div class="special-filter__description {{node.preview_text_c}}" ng-bind-html="node.preview_text"></div>
+        <div class="special-filter__link {{node.author_c}}" ng-bind="node.author.name"></div>
+    </div>
+</a>
+<!--
+<a href="{{node.url}}" class="si-post-card si-post-card_has_author">
+    <div class="si-post-card__head mmmmm">
+        <div class="si-post-card__background" ng-style="{'background-image': 'url('+node.imageUrl+')'}"></div>
+        <div class="si-post-card__overlay"></div>
+        <div class="si-post-card__tag">
+            <span class="si-post-card__tag-icon si-post-card__tag-icon_category_{{node.category.code}}"></span>
+            <span class="si-post-card__tag-text" ng-bind="node.category.name"></span>
+        </div>
+    </div>
+    <div class="si-post-card__body">
+        <div class="si-post-card__caption" ng-bind="node.title"></div>
+        <div class="si-post-card__text" ng-bind-html="node.preview_text"></div>
+    </div>
+    <div class="si-post-card__footer">
+        <div class="r r_s_m r_a_b">
+            <div class="r__c">
+                <div class="si-post-card__timestamp" ng-bind="node.created_at | siDateFormat:'DD MMM YYYY'"></div>
+            </div>
+        </div>
+    </div>
+    <div class="si-post-card__author">
+        <div class="si-post-card__author-avatar">
+            <img ng-src="{{node.author.avatar_image_url}}" alt=""/>
+        </div>
+        <div class="si-post-card__author-name" ng-bind="node.author.name"></div>
+    </div>
+</a>
+-->

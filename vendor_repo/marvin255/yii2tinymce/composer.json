@@ -1,0 +1,21 @@
+{
+    "name": "marvin255/yii2tinymce",
+    "keywords": ["yii2", "tinymce"],
+    "type": "lib",
+    "license": "MIT",
+    "require": {
+      "yiisoft/yii2": ">=2.0.6",
+      "tinymce/tinymce": ">= 4"
+    },
+    "autoload": {
+        "psr-4": {
+            "marvin255\\yii2tinymce\\": "src/"
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

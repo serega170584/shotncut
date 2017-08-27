@@ -1,0 +1,14 @@
+<a href="{{node.url}}" class="si-multipurpose-card si-multipurpose-card_type_policy">
+    <div class="si-multipurpose-card__background" ng-style="{'background-image':'url('+ node.imageUrl +')'}"></div>
+    <div class="si-multipurpose-card__overlay"></div>
+    <div class="si-multipurpose-card__container">
+        <div class="si-multipurpose-card__caption" ng-bind="node.title"></div>
+        <div class="si-multipurpose-card__text" ng-bind-html="node.preview_text"></div>
+        <div class="si-multipurpose-card__comp">{{node.company}}</div>
+    </div>
+  <span class="si-multipurpose-card__action">
+    <span class="sb-button sb-button_theme_f">
+      <span class="sb-button__text">Узнать подробнее</span>
+    </span>
+  </span>
+</a>

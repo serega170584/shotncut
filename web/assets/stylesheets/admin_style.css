@@ -1,0 +1,8 @@
+.about_list tbody tr td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about_list tbody tr td.pd_lf_1 {
+    padding-left: 60px;
+}

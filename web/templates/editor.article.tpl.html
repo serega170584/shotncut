@@ -1,0 +1,21 @@
+<a href="{{data.url}}" class="si-post-card">
+  <div class="si-post-card__head">
+    <div class="si-post-card__background" ng-style="{'background-image': 'url('+data.imageUrl+')'}"></div>
+    <div class="si-post-card__overlay"></div>
+    <div class="si-post-card__tag">
+      <span class="si-post-card__tag-icon si-post-card__tag-icon_category_{{data.category.code}}"></span>
+      <span class="si-post-card__tag-text" ng-bind="data.category.name"></span>
+    </div>
+  </div>
+  <div class="si-post-card__body">
+    <div class="si-post-card__caption" ng-bind="data.title"></div>
+    <div class="si-post-card__text" ng-bind-html="data.preview_text"></div>
+  </div>
+  <div class="si-post-card__footer">
+    <div class="r r_s_m r_a_b">
+      <div class="r__c">
+        <div class="si-post-card__timestamp" ng-bind="node.created_at | siDateFormat:'DD MMM YYYY'"></div>
+      </div>
+    </div>
+  </div>
+</a>
