@@ -1,0 +1,18 @@
+#AuthType Basic
+#AuthName admin
+#require valid-user
+#AuthUserFile  /var/www/dg-prod/data/www/sbins.dg-prod.ru/.htpasswd
+
+# Mod_Autoindex
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+# Mod_Rewrite
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+
+  RewriteEngine On
+  IndexIgnore */*
+  RewriteRule ^([^/].*)?$ /web/$1
+</IfModule>
