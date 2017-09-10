@@ -45,9 +45,9 @@ $config = [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=vagrant',
-            'username' => 'vagrant',
-            'password' => 'vagrant',
+            'dsn' => 'mysql:host=localhost;dbname=shotncut',
+            'username' => 'shotncut',
+            'password' => '2EnRd%9nrA1d',
             'charset' => 'utf8',
         ],
     ],
