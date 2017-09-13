@@ -71,7 +71,8 @@ $form = ActiveForm::begin([
 
 
 <div class="panel panel-default">
-    <div class="panel-heading">Категория</div>
+    <input type="hidden" name="News[category_id]" value="1" />
+    <!--div class="panel-heading">Категория</div>
     <div class="panel-body">
         <?php
 
@@ -82,7 +83,7 @@ $form = ActiveForm::begin([
                 'placeholder' => 'Выбирите категорию ...',
             ]
         ]); ?>
-    </div>
+    </div-->
 </div>
 
 <div class="panel panel-default">
