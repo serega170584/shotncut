@@ -22,7 +22,7 @@
                         <span class="b-blog__date"><?= Yii::$app->formatter->asDatetime($item->created_at, 'd MMMM'); ?></span>
                         <h3><?=\yii\helpers\Html::encode($item->title)?></h3>
                         <div class="js-blog-pic b-blog__pic">
-                            <div class="b-blog__pic_img" style="background-image: url(<?= $item->previewPicture->fsPath ?>)"></div>
+                            <div class="b-blog__pic_img" style="background-image: url(<?= $item->getPreviewThumbUrl() ?>)"></div>
                             <div class="b-blog__pic_line b-blog__pic_line_1"></div>
                             <div class="b-blog__pic_line b-blog__pic_line_2"></div>
                             <div class="b-blog__pic_line b-blog__pic_line_3"></div>
