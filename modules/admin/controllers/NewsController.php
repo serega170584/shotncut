@@ -18,7 +18,7 @@ class NewsController extends CrudController
      */
     protected function getActiveQuery()
     {
-        return News::find();
+        return News::find()->where('id > 112');
     }
 
     /**
