@@ -125,12 +125,12 @@ class News extends Node
 
     public function getPreviewThumbUrl(){
         return $this->previewPicture ?
-            Yii::$app->imager->getThumbUrl($this->previewPicture->fsPath, 700, 528) : null;
+            Yii::$app->imager->getThumbUrl($this->previewPicture->fsPath, 520, 259) : null;
     }
 
     public function getDetailThumbUrl(){
         return $this->detailPicture ?
-            Yii::$app->imager->getThumbUrl($this->detailPicture->fsPath, 700, 528) : null;
+            Yii::$app->imager->getThumbUrl($this->detailPicture->fsPath, 520, 259) : null;
     }
 
 }
