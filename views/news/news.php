@@ -9,7 +9,7 @@
 
 <section class="b-top__section">
     <div class="b-wrapper">
-        <h1>Новости</h1>
+        <h1>Блог</h1>
         <ul class="u-clear-fix b-common-sort">
             <li class="b-common-sort__item">
                 <a href="#sort_all" class="js-common-sort active">Все</a>

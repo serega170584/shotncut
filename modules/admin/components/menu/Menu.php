@@ -46,7 +46,7 @@ class Menu extends Component
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Мои статьи', 'url' => ['/admin/ambassador-articles'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_AMBASSADOR)],
-                    ['label' => 'Новости', 'url' => ['/admin/news'],
+                    ['label' => 'Блог', 'url' => ['/admin/news'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Категории видео', 'url' => ['/admin/categories-video'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],

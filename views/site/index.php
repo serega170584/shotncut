@@ -127,7 +127,7 @@
                     <div class="b-index-sort">
                         <input checked class="js-sort" type="checkbox" name="news[]" value="all" id="news_all">
                         <label for="news_all" class="b-index-sort__label">
-                            Новости
+                            Блог
                             <span class="b-index-sort__icon"><span></span></span>
                         </label>
                     </div>

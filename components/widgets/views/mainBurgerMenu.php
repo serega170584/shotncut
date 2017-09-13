@@ -155,7 +155,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="b-link"><span class="b-link__text">Новости</span></span>
+                                <span class="b-link"><span class="b-link__text">Блог</span></span>
                             </a>
                         </li>
                         <li>

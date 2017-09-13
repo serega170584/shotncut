@@ -7,7 +7,7 @@ use yii\grid\SerialColumn;
 use yii\grid\ActionColumn;
 
 
-$this->title = 'Новости';
+$this->title = 'Блог';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
