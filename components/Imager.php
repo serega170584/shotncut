@@ -71,15 +71,14 @@ class Imager extends Component {
 
         try{
             if($rewrite || !file_exists($thumb_path)) {
-                var_dump($thumb_path);
-                die('asd');
+
                 FileHelper::createDirectory(dirname($thumb_path));
 
                 Image::thumbnail($origin_path_image, $width, $height)
                     ->save($thumb_path, ['quality' => $q]);
             }
         }catch (\Exception $e){
-
+            die('asd');
             return null;
         }
 
