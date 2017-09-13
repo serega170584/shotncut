@@ -68,11 +68,11 @@ class Menu extends Component
                         ]
                     ],*/
 
-                    ['label' => 'О Компании', 'url' => ['/admin/about-list'],
+                    /*['label' => 'О Компании', 'url' => ['/admin/about-list'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
 
                     ['label' => 'Обратная связь', 'url' => ['/admin/feedback'],
-                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
+                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],*/
 /*
                     ['label' => 'О Компании / Контакты', 'url' => ['/admin/about'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
