@@ -55,7 +55,8 @@ $form = ActiveForm::begin([
 
 
 <div class="panel panel-default">
-    <div class="panel-heading">Комания</div>
+    <input type="hidden" name="News[rating]" value="0" />
+    <!--div class="panel-heading">Комания</1div>
     <div class="panel-body">
         <?php
         echo $form->field($model, 'rating')->label(false)->widget(Select2::className(), [
@@ -65,7 +66,7 @@ $form = ActiveForm::begin([
             ]
         ]);
         ?>
-    </div>
+    </div-->
 </div> 
 
 
