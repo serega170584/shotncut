@@ -54,7 +54,7 @@ class NewsController extends Controller {
 
     public function actionIndex($page = 0)
     {
-        $news = News::find()->defaultSort()->limit(7)->offset($page*7)->all();
+        $news = News::find()->defaultSort()->limit(7)->offset($page*7)->where('status=1 AND id > 112')->all();
         $company_name = Node::getCompany();
 
         return $this->render('news', [
