@@ -42,20 +42,20 @@ class Menu extends Component
             [
                 'label' => 'Контент', 'url' => '',
                 'items' => [
-                    ['label' => 'Верхнее меню', 'url' => ['/admin/categories-menu'],
+                    /*['label' => 'Верхнее меню', 'url' => ['/admin/categories-menu'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Мои статьи', 'url' => ['/admin/ambassador-articles'],
-                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_AMBASSADOR)],
+                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_AMBASSADOR)],*/
                     ['label' => 'Блог', 'url' => ['/admin/news'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
-                    ['label' => 'Категории видео', 'url' => ['/admin/categories-video'],
+                    /*['label' => 'Категории видео', 'url' => ['/admin/categories-video'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Видео', 'url' => ['/admin/video'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Статьи', 'url' => ['/admin/articles'],
                         'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
                     ['label' => 'Страницы', 'url' => ['/admin/pages'],
-                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],
+                        'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)],*/
 /*
                     ['label' => 'О компании', 'url' => '',
                     'items' => [
