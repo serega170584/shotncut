@@ -71,7 +71,8 @@ class Imager extends Component {
 
         try{
             if($rewrite || !file_exists($thumb_path)) {
-
+                var_dump($thumb_path);
+                die('asd');
                 FileHelper::createDirectory(dirname($thumb_path));
 
                 Image::thumbnail($origin_path_image, $width, $height)
@@ -94,8 +95,6 @@ class Imager extends Component {
      */
     private function getThumbPath($origin_path_image, $width, $height){
         $thumb_name = basename($origin_path_image);
-        var_dump($thumb_name);
-        die('asd');
         if(!$thumb_name)
             return null;
 
