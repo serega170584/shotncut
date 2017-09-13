@@ -30,12 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'label' => 'Сорт.'
         ],
 
-        [
+        /*[
             'attribute' => 'rating',
             'content' => function ($model) {
                 return ($model->rating == 0) ? 'Сбербанк страхование': 'Сбербанк страхование жизни';
             },
-        ], 
+        ],*/
 /*
         'alias',
         [
