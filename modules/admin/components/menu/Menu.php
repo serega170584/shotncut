@@ -84,7 +84,7 @@ class Menu extends Component
                 ],
                 'visible' => !Yii::$app->user->isGuest
             ],
-            [
+            /*[
                 'label' => 'Продукты', 'url' => '',
                 'items' => [
                     ['label' => 'Способ оформления', 'url' => ['/admin/categories2'],
@@ -96,7 +96,7 @@ class Menu extends Component
                     ['label' => 'Список продуктов', 'url' => ['/admin/products']],
                 ],
                 'visible' => $can_admin || Yii::$app->user->can(User::ROLE_CONTENT_MANAGER)
-            ]
+            ]*/
         ];
     }
 
@@ -147,14 +147,14 @@ class Menu extends Component
     protected function getUserMenu()
     {
         return [
-            [
+            /*[
                 'label' => 'Пользователи', 'url' => '',
                 'items' => [
                     ['label' => 'Управление пользователями', 'url' => ['/user/admin']],
                     ['label' => 'Управление доступом', 'url' => ['/rbac']],
                 ],
                 'visible' => !Yii::$app->user->isGuest ? Yii::$app->user->identity->isAdmin : false
-            ]
+            ]*/
         ];
     }
 }
