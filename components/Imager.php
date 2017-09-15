@@ -78,6 +78,8 @@ class Imager extends Component {
                     ->save($thumb_path, ['quality' => $q]);
             }
         }catch (\Exception $e){
+            echo $e->getMessage();
+            die('asd');
             return null;
         }
 
