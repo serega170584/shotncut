@@ -28,7 +28,8 @@
         "kartik-v/yii2-widget-select2": "@dev",
         "kop/yii2-scroll-pager": "2.5.*",
         "devgroup/yii2-dropzone": "1.0.*",
-        "yiisoft/yii2-elasticsearch": "2.0.*"
+        "yiisoft/yii2-elasticsearch": "2.0.*",
+        "bizley/contenttools": "1.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "2.0.*",
