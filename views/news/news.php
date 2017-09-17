@@ -1,4 +1,4 @@
-<?php 123
+<?php
 /** @var app\models\node\News[] $news */
 ?>
 
