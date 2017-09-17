@@ -21,7 +21,7 @@
 
 </head>
 <body>
-
+<?php $this->beginBody() ?>
 <div class="js-index-bg b-index-bg__box">
   <div class="b-index-bg">
     <video loop autoplay muted controls="true" width='100%' height='100%' id="indexVideo" poster="" class="b-index-bg__video">
@@ -987,7 +987,7 @@
   </div>
 </div>
 
-
+<?php $this->endBody() ?>
 </body>
 </html>
 
