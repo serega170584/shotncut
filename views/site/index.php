@@ -1,3 +1,7 @@
+<?php
+$this->registerJs('alert("123");', yii\web\View::POS_END);
+?>
+
 <a href="#" class="js-index-scroll b-index-scroll">
     Подробнее
     <span class="b-index-scroll__i"></span>
@@ -9,7 +13,7 @@
     <section class="js-index-title js-window-height b-index-title">
         <div class="b-wrapper">
             <div class="b-title">
-                <?= \bizley\quill\Quill::widget(['view' => $this, 'name' => 'editor',
+                <?= \bizley\quill\Quill::widget(['name' => 'editor',
                     'value' => 'aasdasdasdasdasdasd',
                     'toolbarOptions' => [['bold', 'italic', 'underline'], [['color' => []]]]
                 ]) ?>
