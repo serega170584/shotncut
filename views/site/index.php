@@ -9,7 +9,7 @@
     <section class="js-index-title js-window-height b-index-title">
         <div class="b-wrapper">
             <div class="b-title">
-                <?= \bizley\quill\Quill::widget(['name' => 'editor',
+                <?= \bizley\quill\Quill::widget(['view' => $this, 'name' => 'editor',
                     'value' => 'aasdasdasdasdasdasd',
                     'toolbarOptions' => [['bold', 'italic', 'underline'], [['color' => []]]]
                 ]) ?>
