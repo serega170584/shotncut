@@ -1,3 +1,4 @@
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -990,4 +991,5 @@
 <?php $this->endBody() ?>
 </body>
 </html>
+<?php $this->endPage() ?>
 
