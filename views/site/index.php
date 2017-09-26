@@ -1,7 +1,3 @@
-<?php
-$this->registerJs('alert("123");', yii\web\View::POS_END);
-?>
-
 <a href="#" class="js-index-scroll b-index-scroll">
     Подробнее
     <span class="b-index-scroll__i"></span>
