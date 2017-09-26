@@ -9,10 +9,6 @@
     <section class="js-index-title js-window-height b-index-title">
         <div class="b-wrapper">
             <div class="b-title">
-                <?= \bizley\quill\Quill::widget(['name' => 'editor',
-                    'value' => 'aasdasdasdasdasdasd',
-                    'toolbarOptions' => [['bold', 'italic', 'underline'], [['color' => []]]]
-                ]) ?>
                 <h1>Продакшн студия</h1>
                 <p>Корпоративное, вирусное и рекламное видео для компаний из России, Англии, США и Европы.</p>
             </div>
