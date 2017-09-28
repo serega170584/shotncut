@@ -10,7 +10,9 @@
         <div class="b-wrapper">
             <div class="b-title">
                 <h1>Продакшн студия</h1>
+                <?php \bizley\contenttools\ContentTools::begin(); ?>
                 <p>Корпоративное, вирусное и рекламное видео для компаний из России, Англии, США и Европы.</p>
+                <?php \bizley\contenttools\ContentTools::end(); ?>
             </div>
         </div>
     </section>
