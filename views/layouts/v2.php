@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +22,11 @@
   <script src="js/common.js"></script>
   <script src="js/pages/calc.js"></script>
   <script src="js/pages/index.js"></script>
+
+  <meta charset="UTF-8"/>
+  <?= Html::csrfMetaTags() ?>
+  <title><?= Html::encode($this->title) ?></title>
+  <?php $this->head() ?>
 
 </head>
 <body>
