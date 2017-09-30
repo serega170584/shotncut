@@ -1,3 +1,6 @@
+<?php
+use Yii;
+?>
 <a href="#" class="js-index-scroll b-index-scroll">
     Подробнее
     <span class="b-index-scroll__i"></span>
@@ -10,9 +13,18 @@
         <div class="b-wrapper">
             <div class="b-title">
                 <h1>Продакшн студия</h1>
+                <?php
+                if (!Yii::$app->user->isGuest) {
+                    \bizley\contenttools\ContentTools::begin();
+                }
+                ?>
                 <?php \bizley\contenttools\ContentTools::begin(); ?>
                 <p>Корпоративное, вирусное и рекламное видео для компаний из России, Англии, США и Европы.</p>
-                <?php \bizley\contenttools\ContentTools::end(); ?>
+                <?php
+                if (!Yii::$app->user->isGuest) {
+                    \bizley\contenttools\ContentTools::end();
+                }
+                ?>
             </div>
         </div>
     </section>
