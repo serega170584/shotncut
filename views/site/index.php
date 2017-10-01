@@ -1,6 +1,4 @@
 <?php
-var_dump(\Yii::$app->user);
-die('asd');
 use Yii;
 ?>
 <a href="#" class="js-index-scroll b-index-scroll">
