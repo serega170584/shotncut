@@ -313,7 +313,8 @@ class SiteController extends \app\components\Controller
     }
 
     public function actionSaveContent() {
-
+        var_dump($_POST);
+        die('asd');
     }
 
 
