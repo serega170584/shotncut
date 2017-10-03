@@ -15,7 +15,7 @@ use Yii;
                 <h1>Продакшн студия</h1>
                 <?php
                 if (!Yii::$app->user->isGuest) {
-                    \bizley\contenttools\ContentTools::begin(['page' => 'site/index', 'id' => 'contentTools1']);
+                    \bizley\contenttools\ContentTools::begin(['id' => 'contentTools1']);
                 }
                 ?>
                 <p>Корпоративное, вирусное и рекламное видео для компаний из России, Англии, США и Европы.</p>
