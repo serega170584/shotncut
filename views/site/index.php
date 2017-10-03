@@ -20,7 +20,6 @@ die('asd');
                     \bizley\contenttools\ContentTools::begin();
                 }
                 ?>
-                <?php \bizley\contenttools\ContentTools::begin(); ?>
                 <p>Корпоративное, вирусное и рекламное видео для компаний из России, Англии, США и Европы.</p>
                 <?php
                 if (!Yii::$app->user->isGuest) {
