@@ -312,6 +312,10 @@ class SiteController extends \app\components\Controller
         return $this->render('about/reestr', compact('data'));
     }
 
+    public function actionSaveContent() {
+
+    }
+
 
 
 }
